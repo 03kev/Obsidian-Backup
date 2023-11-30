@@ -1,0 +1,236 @@
+[
+  {
+    "fileName": "Rune e Stringhe in Go",
+    "relativePath": "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "headings": [
+      {
+        "heading": "Sistemi di codifica",
+        "level": 4
+      },
+      {
+        "heading": "ASCII (1963)",
+        "level": 6
+      },
+      {
+        "heading": "ISO 8859-15 (1999)",
+        "level": 6
+      },
+      {
+        "heading": "UNICODE",
+        "level": 6
+      },
+      {
+        "heading": "Rappresentazione dei caratteri in Go",
+        "level": 4
+      },
+      {
+        "heading": "Rune",
+        "level": 5
+      },
+      {
+        "heading": "UTF-8",
+        "level": 6
+      },
+      {
+        "heading": "[Stringhe](https://go.dev/blog/strings)",
+        "level": 5
+      },
+      {
+        "heading": "Problematiche di len(stringa) e stringa[i] in Go",
+        "level": 6
+      }
+    ]
+  },
+  {
+    "fileName": "Aritmetica Modulare",
+    "relativePath": "02 Programmazione I/Appunti Teoria/Aritmetica Modulare.md"
+  },
+  {
+    "fileName": "2023-11-10 Array e Slice",
+    "relativePath": "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
+    "headings": [
+      {
+        "heading": "Array",
+        "level": 4
+      },
+      {
+        "heading": "Slice",
+        "level": 4
+      },
+      {
+        "heading": "Subslicing",
+        "level": 6
+      },
+      {
+        "heading": "Come funzionano le slice",
+        "level": 6
+      }
+    ]
+  },
+  {
+    "fileName": "2023-11-08 Type and Structures",
+    "relativePath": "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
+    "headings": [
+      {
+        "heading": "Type Keyword",
+        "level": 4
+      },
+      {
+        "heading": "Structures",
+        "level": 4
+      },
+      {
+        "heading": "Strutture definite come Variabili",
+        "level": 5
+      },
+      {
+        "heading": "Strutture definite come Tipi",
+        "level": 5
+      },
+      {
+        "heading": "Puntatori a Strutture",
+        "level": 6
+      }
+    ]
+  },
+  {
+    "fileName": "2023-11-07 Pointers",
+    "relativePath": "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "headings": [
+      {
+        "heading": "Puntatori",
+        "level": 4
+      },
+      {
+        "heading": "Dichiarazione di un puntatore",
+        "level": 6
+      },
+      {
+        "heading": "Operatori dei puntatori",
+        "level": 6
+      },
+      {
+        "heading": "Funzioni con puntatori",
+        "level": 6
+      },
+      {
+        "heading": "Concatenazione di puntatori",
+        "level": 6
+      },
+      {
+        "heading": "Deferenziare \\<nil>",
+        "level": 6
+      },
+      {
+        "heading": "New(type) Keyword",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "fileName": "2023-11-03",
+    "relativePath": "02 Programmazione I/Appunti Teoria/2023-11-03.md",
+    "headings": [
+      {
+        "heading": "Continue",
+        "level": 4
+      },
+      {
+        "heading": "[Strconv Package](https://pkg.go.dev/strconv)",
+        "level": 4
+      },
+      {
+        "heading": "Basic Numeric conversions",
+        "level": 6
+      },
+      {
+        "heading": "From string to number",
+        "level": 6
+      },
+      {
+        "heading": "From number to string",
+        "level": 6
+      },
+      {
+        "heading": "Convertire un numero decimale in numero binario:",
+        "level": 6
+      },
+      {
+        "heading": "Convertire un numero binario in  numero decimale:",
+        "level": 6
+      },
+      {
+        "heading": "[Strings Package](https://pkg.go.dev/strings#Index)",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "fileName": "2023-10-31",
+    "relativePath": "02 Programmazione I/Appunti Teoria/2023-10-31.md",
+    "headings": [
+      {
+        "heading": "Switch",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "fileName": "Zoom",
+    "relativePath": "config/Zoom.md",
+    "headings": [
+      {
+        "heading": "Header 1",
+        "level": 1
+      },
+      {
+        "heading": "Header 2",
+        "level": 2
+      },
+      {
+        "heading": "Header 3",
+        "level": 3
+      },
+      {
+        "heading": "Header 4",
+        "level": 4
+      },
+      {
+        "heading": "Header 5",
+        "level": 5
+      },
+      {
+        "heading": "Header 6",
+        "level": 6
+      }
+    ]
+  },
+  {
+    "fileName": "Format - Underline",
+    "relativePath": "config/Templates/Format - Underline.md"
+  },
+  {
+    "fileName": "Format - Pedice",
+    "relativePath": "config/Templates/Format - Pedice.md"
+  },
+  {
+    "fileName": "Format - Colored Text",
+    "relativePath": "config/Templates/Format - Colored Text.md"
+  },
+  {
+    "fileName": "Format - Blank Line",
+    "relativePath": "config/Templates/Format - Blank Line.md"
+  },
+  {
+    "fileName": "Format - Apice",
+    "relativePath": "config/Templates/Format - Apice.md"
+  },
+  {
+    "fileName": "Code - Oneline Go",
+    "relativePath": "config/Templates/Code - Oneline Go.md"
+  },
+  {
+    "fileName": "Code - Multiline Go",
+    "relativePath": "config/Templates/Code - Multiline Go.md"
+  }
+]

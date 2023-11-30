@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "c506eb63581beb14",
+    "type": "split",
+    "children": [
+      {
+        "id": "c60a4f81107dc313",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "313288ded0796f93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3219dcd49b718a96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "config/zoom.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7732031b085820b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "531b72aa87d5a936",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c29351fec589cd05",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "33e0317ab341b13e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7c03139b16714cae",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 272.5
+  },
+  "right": {
+    "id": "09f2d08edbef226d",
+    "type": "split",
+    "children": [
+      {
+        "id": "26f925375f09597f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bcc6027438799cf2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "config/zoom.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ebf27cea350cdd0b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "config/zoom.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f1bf7e474158bfea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "67eac7438c752deb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "config/zoom.md"
+              }
+            }
+          },
+          {
+            "id": "e22e37004a805fff",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "4ef9c4c5aee2514a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 273.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "command-palette:Open command palette": true,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "code-files:Create Code File": false,
+      "audio-recorder:Start/stop recording": false,
+      "cmdr:AI Commander: Generate text from prompt": false,
+      "copilot:Copilot Chat": false,
+      "obsidian-excalidraw-plugin:Create new drawing": true,
+      "darlal-switcher-plus:Open in Headings Mode": true,
+      "darlal-switcher-plus:Open Symbols for the active editor": true,
+      "translate:Open translation view": false
+    }
+  },
+  "active": "3219dcd49b718a96",
+  "lastOpenFiles": [
+    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-03.md",
+    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-15.md",
+    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
+    "02 Programmazione I/Appunti Teoria/attachments/ASCII Table.png",
+    "02 Programmazione I/Appunti Teoria/attachments/20231128_100040.jpg",
+    "01 Architettura degli Elaboratori/Appunti Teoria/Mappe di Karnaugh.canvas",
+    "01 Architettura degli Elaboratori/Appunti Teoria/CPU a Singolo Ciclo.md",
+    "02 Programmazione I/Appunti Teoria/To Do.md",
+    "config/templater/Code - Oneline Go.md",
+    "config/templater/Code - Multiline Go.md",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130102007.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130100745.png",
+    "config/zoom.md",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Fasi CPU.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231030090636.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130094950.png",
+    "config/js_scripts/prova.js.js",
+    "My Code File.js",
+    ".obsidian/snippets/general.css",
+    "02 Programmazione I/Appunti Teoria/attachments/Pasted image 20231128102317.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231030090604.png",
+    "config/templater/Markdown - Image.md",
+    "config/templater/Format - Apice.md",
+    "2023-11-07 Pointers.md",
+    "attachments",
+    "copilot-conversations/Chat-2023_11_21-11_42_15.md",
+    "copilot-conversations",
+    "copilot-conversations/Chat-2023_11_21-11_37_15.md",
+    "copilot-conversations/Chat-2023_11_21-11_38_04.md",
+    "copilot-conversations/Chat-2023_11_21-11_37_58.md",
+    "attachments/Prova.md/l2mi85wmDRwQfTCwyhbS.png",
+    "Prova.md",
+    "attachments/Prova 2.md",
+    "attachments/Prova 1.md",
+    "attachments/Prova.md",
+    "03 Inglese/British Pronunciation",
+    "03 Inglese",
+    "Excalidraw",
+    "My Code File.ts",
+    "My Code File.py",
+    "Programmazione I/Untitled.canvas",
+    "Architettura degli Elaboratori/Untitled/Untitled.canvas"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "folders": [
+    {
+      "name": "",
+      "relativePath": "/"
+    },
+    {
+      "name": "config",
+      "relativePath": "config"
+    },
+    {
+      "name": "Templates",
+      "relativePath": "config/Templates"
+    },
+    {
+      "name": "01 Architettura degli Elaboratori",
+      "relativePath": "01 Architettura degli Elaboratori"
+    },
+    {
+      "name": "Appunti Teoria",
+      "relativePath": "01 Architettura degli Elaboratori/Appunti Teoria"
+    },
+    {
+      "name": "attachments",
+      "relativePath": "01 Architettura degli Elaboratori/Appunti Teoria/attachments"
+    },
+    {
+      "name": "02 Programmazione I",
+      "relativePath": "02 Programmazione I"
+    },
+    {
+      "name": "Appunti Teoria",
+      "relativePath": "02 Programmazione I/Appunti Teoria"
+    },
+    {
+      "name": "attachments",
+      "relativePath": "02 Programmazione I/Appunti Teoria/attachments"
+    }
+  ],
+  "nonMdFiles": [
+    {
+      "name": "Mappe di Karnaugh.canvas",
+      "basename": "Mappe di Karnaugh",
+      "relativePath": "01 Architettura degli Elaboratori/Appunti Teoria/Mappe di Karnaugh.canvas"
+    },
+    {
+      "name": "Pasted image 20231030090636.png",
+      "basename": "Pasted image 20231030090636",
+      "relativePath": "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231030090636.png"
+    },
+    {
+      "name": "Pasted image 20231030090604.png",
+      "basename": "Pasted image 20231030090604",
+      "relativePath": "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231030090604.png"
+    },
+    {
+      "name": "ASCII Table.png",
+      "basename": "ASCII Table",
+      "relativePath": "02 Programmazione I/Appunti Teoria/attachments/ASCII Table.png"
+    },
+    {
+      "name": "ISO8859-15 Table.png",
+      "basename": "ISO8859-15 Table",
+      "relativePath": "02 Programmazione I/Appunti Teoria/attachments/ISO8859-15 Table.png"
+    },
+    {
+      "name": "Pointers-in-Golang.png",
+      "basename": "Pointers-in-Golang",
+      "relativePath": "02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png"
+    }
+  ]
+}
