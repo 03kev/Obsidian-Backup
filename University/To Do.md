@@ -1,0 +1,8 @@
+- [ ] Alfred: The shortcut workflow has the ability to let you choose the action from the universal action panel. Add this to the pdf workflow
+- [ ] Fix x2 F6 on karabiner. One possible fix would be to add in system settings the shortcut of Focus mode to f6, but i'd like to avoid this solution because i want f6 to be available
+- [ ] https://www.reddit.com/r/MacOS/comments/jy5ry8/m1_macbook_air_keysshortcut_for_keyboard/ check if i can use this instead of karabiner
+- [ ] Add keyboard brightness control to F1 and F2
+- [ ] Fix Alfred system groups icons and the fact that, for example, the battery panel opens the appearence one
+- [ ] Any kind of workflow/shortcut in order to open silicio EVERY time that I'll open spotify, and also to maybe close them both toghether
+- [ ] Open spotify when pressing F8 instead of iTunes (that has to work when there is no audio or video in the background that can start or that can be paused)
+- [ ] 
