@@ -5,9 +5,7 @@
 - [x] Add keyboard brightness control to fn+F1 and fn+F2
 - [x] Fix Alfred system groups icons and the fact that, for example, the battery panel opens the appearence one <span style="color:rgb(255,0,0)">Fixed only with the workflow (that is better, bu the icons are still missing)</span>
 - [x] Any kind of workflow/shortcut in order to open silicio EVERY time that I'll open spotify, and also to maybe close them both toghether
-- [x] Open spotify when pressing F8 instead of iTunes (that has to work when there is no audio or video in the background that can start or that can be paused)
-      Done using noTunes
+- [x] Open spotify when pressing F8 instead of iTunes (that has to work when there is no audio or video in the background that can start or that can be paused)Done using noTunes
 - [ ] Hide applications, like logisim, from launchpad
-- [x] Check both shortery and bettertouchtool
-      Both are great tools that can do in their full version lots of things
+- [x] Check both shortery and bettertouchtool. Both are great tools that can do in their full version lots of things
 - [ ] check if i can hide some shortcuts from the sc workflow in alfred, for example the ones that are only needed in shortery.
