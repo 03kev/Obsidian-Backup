@@ -1,0 +1,243 @@
+/*- editor line width - default 700px -*/ 
+body {
+  --file-line-width: 800px;  
+}
+
+/* ----------------------------- LINKS ---------------------------- */
+
+/* Text Edit and NonEdit */
+.cm-s-obsidian span.cm-link {
+  color: white;
+}
+/* Text Hover editing link */
+.cm-s-obsidian span.cm-link:hover {
+  color: rgb(125, 125, 125);
+}
+
+/* URL editing not hover */
+.cm-s-obsidian span.cm-url {
+  color: rgb(152, 152, 152);
+}
+/* URL editing hover */
+
+.cm-s-obsidian span.cm-url:hover {
+  color: rgb(60, 60, 60);
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+/* --------------------------------------------- HEADERS --------------------------------------------- */
+
+/* Color of headers and their headers-link */
+
+.cm-header.cm-header-1.cm-link, /* source of h1 link */
+.cm-header-1, /* source of h1 */
+.markdown-preview-view h1, /* reading of h1 */
+.markdown-preview-view h1 a { /* reading of h1 link*/ 
+  color:rgb(15, 59, 121);  /*rgb(81, 18, 226); */
+}
+
+.cm-header.cm-header-2.cm-link, 
+.cm-header-2, 
+.markdown-preview-view h2, 
+.markdown-preview-view h2 a {
+  color:rgb(15, 75, 123); /*rgba(0, 85, 255, 0.896); */
+}
+
+.cm-header.cm-header-3.cm-link, 
+.cm-header-3, 
+.markdown-preview-view h3, 
+.markdown-preview-view h3 a {
+  color:rgb(20, 112, 174);  /*rgba(41, 106, 237, 0.896);*/
+}
+
+.cm-header.cm-header-4.cm-link, 
+.cm-header-4, 
+.markdown-preview-view h4, 
+.markdown-preview-view h4 a {
+  color:rgb(55, 158, 217)  /*rgba(108, 201, 251, 0.896);*/
+}
+
+.cm-header.cm-header-5.cm-link, 
+.cm-header-5, 
+.markdown-preview-view h5, 
+.markdown-preview-view h5 a {
+  color:rgb(124, 195, 231);  /*rgb(68, 255, 227);*/
+}
+
+.cm-header.cm-header-6.cm-link, 
+.cm-header-6, 
+.markdown-preview-view h6, 
+.markdown-preview-view h6 a {
+  color:rgb(169, 212, 246);  /*rgb(136, 242, 203);*/
+}
+
+.markdown-preview-view h6, 
+.markdown-preview-view h6 a { /* bottom spacing */
+  margin-block-end: -10px !important;
+}
+
+/* Remove underline to h-links */
+.cm-header.cm-header.cm-link span.cm-underline, /* source mode */
+.markdown-preview-view h1 a, 
+.markdown-preview-view h2 a,
+.markdown-preview-view h3 a,
+.markdown-preview-view h4 a,
+.markdown-preview-view h5 a,
+.markdown-preview-view h6 a { /* .markdown-preview-view h5 a:hover */
+  text-decoration: none; 
+  background-image: none
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------ BLOCKQUOTES > [text] ---------------------------------------------------------- */
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, 
+.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  border-left: var(--blockquote-border-thickness) solid #666666b5;
+  /*margin-left: 6px; /*BUG 1*/
+} /* SM left bar color */
+
+
+div.HyperMD-quote.HyperMD-quote-1.cm-line { /* bugged with tabs after quote */
+  margin-left: 6px !important;
+  /*padding-inline-start: 18px !important; /* 37px to work with 1 tab */
+}
+
+div.HyperMD-quote.HyperMD-quote-2.cm-line{
+  margin-left: 6px !important;
+  /*padding-inline-start: 28px !important;*/
+}
+
+div.HyperMD-quote.HyperMD-quote-3.cm-line{
+  margin-left: 6px !important;
+  /*padding-inline-start: calc() !important;*/
+}
+
+div.HyperMD-quote.HyperMD-quote-4.cm-line{
+  margin-left: 6px !important;
+  /*padding-inline-start: 48px !important;*/
+}
+
+/*
+span.cm-formatting.cm-formatting-quote.cm-formatting-quote-1.cm-quote.cm-quote-1 {
+  margin-left: 6px;
+}
+
+span.cm-quote {
+  margin-left: 5px;
+} 
+
+.HyperMD-quote.HyperMD-quote-1.cm-line {
+  padding-left: 24px !important /* margin from left bar in source mode  BUG2
+} */
+
+.markdown-rendered blockquote {
+  padding: 0 0 0 var(--size-4-4);
+  border-left: var(--blockquote-border-thickness) solid #666666b5; /* color of left bar */
+} /* RM left bar color and margin */
+
+.markdown-preview-view div:has(>p) + div>blockquote {
+  margin-left: 12px;
+  margin-block-start: -10px;
+} /* RM margins of blockquote that follows a paragraph */
+
+
+/* -------------------- LIST to align to blockquotes ------------------------- */
+
+.markdown-preview-view ul {
+  margin-left: -3px;
+}
+
+.markdown-preview-view div:has(blockquote) + div>ul {
+  margin-block-start: -10px;
+} /* top-margin of list that follows a blockquote */
+
+.markdown-preview-view li>blockquote {
+  margin-block-start: 8px;
+} /* top-margin of a blockquote inside a list element */
+
+.cm-formatting.cm-formatting-list.cm-formatting-list-ul {
+  margin-right: 9px; /* SM left margin from dot to align with left margin of quotes from bar */
+}
+
+div .HyperMD-list-line.HyperMD-list-line-1.HyperMD-list-line-nobullet.cm-line {
+  padding-inline-start: 24px !important; /* SM left margin of line afer list element done while holding shift*/
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.markdown-rendered code.code-styler-inline {
+  --code-styler-inline-padding-right: 25px !important;
+}
+
+
+.markdown-rendered code {
+  margin-right: 12px; /* margin left of multiline code block */
+}
+
+
+/* Title of document */
+.inline-title {
+  color:#C9DDF5
+  /*rgb(18, 223, 199)*/
+}
+
+
+/* -------------- CUSTOM CLASSES -------------------- */
+
+.custom-header {
+  font-size: 26px;
+  color:  skyblue;
+}
+
+/* -------------------------------------------------- */
+
+
+/* ----------------------------- IMAGE CUSTOM ALTS ------------------------------- */
+img[alt*="C"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img[alt~="L"] {
+  display: block;
+  float: left;
+}
+
+img[alt~="R"] {
+  display: block;
+  float: right;
+}
+
+img[alt~='II'] {
+  filter: invert(.8825) hue-rotate(170deg);
+    
+}
+/* ----------------------------------------- */
+
+/* INVERT IMAGE ON BOTH DARK AND LIGHT THEME */
+.theme-dark div[alt~="I"] img,
+.theme-dark span[alt~="I"] img {
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen; 
+}
+
+.theme-dark div[alt~="I"] {
+  background-color: var(--background-primary); 
+}
+
+.theme-light div[alt~="iW"] img,
+.theme-light span[alt~="iW"] img {
+  filter: invert(1) hue-rotate(180deg); 
+}
+/* ------------------------------------------------------------------------------- */
+
+
+/* https://github.com/mgmeyers/obsidian-style-settings */

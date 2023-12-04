@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To Do.md",
+                "file": "config/templater/Markdown - Image.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To Do.md",
+                "file": "config/templater/Markdown - Image.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To Do.md",
+                "file": "config/templater/Markdown - Image.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To Do.md"
+                "file": "config/templater/Markdown - Image.md"
               }
             }
           },
@@ -145,13 +145,22 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "91918cc16f07bef9",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 311.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,10 +180,21 @@
       "translate:Open translation view": false
     }
   },
-  "active": "1f1aa3510b139bf9",
+  "active": "c29351fec589cd05",
   "lastOpenFiles": [
-    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "config/copilot-conversations/Chat-2023_12_04-19_45_39.md",
+    "config/copilot-conversations",
     "To Do.md",
+    "01 Architettura degli Elaboratori/Appunti Teoria/CPU a Singolo Ciclo.md",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204093616.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204093145.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204092705.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204091239.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204090708.png",
+    "copilot-conversations/Chat-2023_12_03-21_04_01.md",
+    "copilot-conversations/Chat-2023_12_03-21_04_08.md",
+    "copilot-conversations",
+    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
     "config/zoom.md",
     "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
@@ -187,39 +207,28 @@
     "02 Programmazione I/Appunti Teoria/attachments/ASCII Table.png",
     "02 Programmazione I/Appunti Teoria/attachments/20231128_100040.jpg",
     "01 Architettura degli Elaboratori/Appunti Teoria/Mappe di Karnaugh.canvas",
-    "01 Architettura degli Elaboratori/Appunti Teoria/CPU a Singolo Ciclo.md",
     "02 Programmazione I/Appunti Teoria/To Do.md",
     "config/templater/Code - Oneline Go.md",
     "config/templater/Code - Multiline Go.md",
     "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130102007.png",
     "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130100745.png",
     "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Fasi CPU.png",
-    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231030090636.png",
-    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130094950.png",
     "config/js_scripts/prova.js.js",
     "My Code File.js",
     ".obsidian/snippets/general.css",
-    "02 Programmazione I/Appunti Teoria/attachments/Pasted image 20231128102317.png",
-    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231030090604.png",
     "config/templater/Markdown - Image.md",
     "config/templater/Format - Apice.md",
     "2023-11-07 Pointers.md",
     "attachments",
     "copilot-conversations/Chat-2023_11_21-11_42_15.md",
-    "copilot-conversations",
     "copilot-conversations/Chat-2023_11_21-11_37_15.md",
     "copilot-conversations/Chat-2023_11_21-11_38_04.md",
     "copilot-conversations/Chat-2023_11_21-11_37_58.md",
-    "attachments/Prova.md/l2mi85wmDRwQfTCwyhbS.png",
     "Prova.md",
-    "attachments/Prova 2.md",
-    "attachments/Prova 1.md",
-    "attachments/Prova.md",
     "03 Inglese/British Pronunciation",
     "03 Inglese",
     "Excalidraw",
     "My Code File.ts",
-    "My Code File.py",
     "Programmazione I/Untitled.canvas",
     "Architettura degli Elaboratori/Untitled/Untitled.canvas"
   ]

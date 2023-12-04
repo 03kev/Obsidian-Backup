@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "c506eb63581beb14",
+    "type": "split",
+    "children": [
+      {
+        "id": "c60a4f81107dc313",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f1aa3510b139bf9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "To Do.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7732031b085820b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "531b72aa87d5a936",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c29351fec589cd05",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "33e0317ab341b13e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7c03139b16714cae",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 272.5
+  },
+  "right": {
+    "id": "09f2d08edbef226d",
+    "type": "split",
+    "children": [
+      {
+        "id": "26f925375f09597f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bcc6027438799cf2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "To Do.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ebf27cea350cdd0b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "To Do.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f1bf7e474158bfea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "67eac7438c752deb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "To Do.md"
+              }
+            }
+          },
+          {
+            "id": "e22e37004a805fff",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "4ef9c4c5aee2514a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "91918cc16f07bef9",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 311.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "command-palette:Open command palette": true,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "audio-recorder:Start/stop recording": false,
+      "cmdr:AI Commander: Generate text from prompt": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "code-files:Create Code File": false,
+      "copilot:Copilot Chat": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "translate:Open translation view": false
+    }
+  },
+  "active": "c29351fec589cd05",
+  "lastOpenFiles": [
+    "config/js_scripts/prova.js.js",
+    "To Do.md",
+    "config/templater/Markdown - Image.md",
+    "config/templater/Format - Apice.md",
+    "config/templater/Format - Colored Text.md",
+    "config/templater/Format - Pedice.md",
+    "config/templater/Code - Multiline Go.md",
+    "config/templater/Code - Oneline Go.md",
+    "config/templater/Format - Underline.md",
+    "config/templater/Format - Blank Line.md",
+    "config/zoom.md",
+    "config/js_scripts",
+    "config/templater",
+    "config",
+    "config/copilot-conversations/Chat-2023_12_04-19_45_39.md",
+    "config/copilot-conversations",
+    "01 Architettura degli Elaboratori/Appunti Teoria/CPU a Singolo Ciclo.md",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204093616.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204093145.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204092705.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204091239.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204090708.png",
+    "copilot-conversations/Chat-2023_12_03-21_04_01.md",
+    "copilot-conversations/Chat-2023_12_03-21_04_08.md",
+    "copilot-conversations",
+    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "config/zoom.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-03.md",
+    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-15.md",
+    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
+    "02 Programmazione I/Appunti Teoria/attachments/ASCII Table.png",
+    "02 Programmazione I/Appunti Teoria/attachments/20231128_100040.jpg",
+    "01 Architettura degli Elaboratori/Appunti Teoria/Mappe di Karnaugh.canvas",
+    "02 Programmazione I/Appunti Teoria/To Do.md",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130102007.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130100745.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Fasi CPU.png",
+    "My Code File.js",
+    ".obsidian/snippets/general.css",
+    "attachments",
+    "Programmazione I/Untitled.canvas",
+    "Architettura degli Elaboratori/Untitled/Untitled.canvas"
+  ]
+}

@@ -19,6 +19,6 @@
   "ttlDays": 30,
   "stream": true,
   "embeddingProvider": "openai",
-  "defaultSaveFolder": "copilot-conversations",
+  "defaultSaveFolder": "config/copilot-conversations",
   "debug": false
 }

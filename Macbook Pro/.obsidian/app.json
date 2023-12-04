@@ -1,0 +1,18 @@
+{
+  "promptDelete": false,
+  "showInlineTitle": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./attachments",
+  "spellcheck": false,
+  "showLineNumber": false,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 75
+  },
+  "autoConvertHtml": true,
+  "readableLineLength": true
+}

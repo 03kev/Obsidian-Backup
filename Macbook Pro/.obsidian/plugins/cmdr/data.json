@@ -1,0 +1,86 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "ai-commander:text-prompt",
+      "icon": "pen-tool",
+      "name": "AI Commander: Generate text from prompt",
+      "mode": "any",
+      "color": "#000000"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "templater-obsidian:insert-templater",
+      "icon": "layout-template",
+      "name": "Templater: Open Insert Template modal",
+      "mode": "9d5bb72015f29aa3",
+      "color": "#4de0ea"
+    },
+    {
+      "id": "execute-code:run-all-code-blocks-in-file",
+      "icon": "mouse-pointer-click",
+      "name": "Execute Code: Run all Code Blocks in Current File",
+      "mode": "9d5bb72015f29aa3",
+      "color": "#ce4040"
+    },
+    {
+      "id": "customjs:invokeScript",
+      "icon": "code-2",
+      "name": "CustomJS: Invoke Script",
+      "mode": "9d5bb72015f29aa3",
+      "color": "#ffdd00"
+    },
+    {
+      "id": "execute-code:run-all-code-blocks-in-file",
+      "icon": "mouse-pointer-click",
+      "name": "Execute Code: Run all Code Blocks in Current File",
+      "mode": "any",
+      "color": "#bf1212"
+    },
+    {
+      "id": "customjs:invokeScript",
+      "icon": "code-2",
+      "name": "CustomJS: Invoke Script",
+      "mode": "any",
+      "color": "#f4d50b"
+    },
+    {
+      "id": "templater-obsidian:insert-templater",
+      "icon": "layout-template",
+      "name": "Templater: Open Insert Template modal",
+      "mode": "any",
+      "color": "#0ec4dd"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [
+      "colored-text",
+      "editing-toolbar"
+    ],
+    "leftRibbon": [
+      "Templater",
+      "Review flashcards"
+    ]
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "accentColor": "#8e52ff",
+  "baseFontSize": 17,
+  "cssTheme": "",
+  "showViewHeader": true,
+  "nativeMenus": true,
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "snippets",
+    "links",
+    "obsidian-default-theme",
+    "navbar",
+    "general"
+  ],
+  "baseFontSizeAction": false
+}
