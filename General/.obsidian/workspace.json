@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c60a4f81107dc313",
+        "id": "aeda1ad51ef2e7d0",
         "type": "tabs",
         "children": [
           {
-            "id": "1f1aa3510b139bf9",
+            "id": "0506fe9ed35c8afc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c2e570fe679673ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Enterteinment.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To Do.md",
+                "file": "Enterteinment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To Do.md",
+                "file": "Enterteinment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To Do.md"
+                "file": "Enterteinment.md"
               }
             }
           },
@@ -172,27 +186,29 @@
       "templates:Insert template": false,
       "audio-recorder:Start/stop recording": false,
       "cmdr:AI Commander: Generate text from prompt": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-excalidraw-plugin:Create new drawing": true,
       "code-files:Create Code File": false,
       "copilot:Copilot Chat": false,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "darlal-switcher-plus:Open in Headings Mode": true,
+      "darlal-switcher-plus:Open Symbols for the active editor": true,
       "translate:Open translation view": false
     }
   },
-  "active": "c29351fec589cd05",
+  "active": "c2e570fe679673ac",
   "lastOpenFiles": [
-    "config/js_scripts/prova.js.js",
     "To Do.md",
+    "Enterteinment.md",
+    "config/zoom.md",
+    "config/templater/Format - Links.md",
+    "config/templater/Format - Underline.md",
     "config/templater/Markdown - Image.md",
     "config/templater/Format - Apice.md",
+    "config/templater/Code - Oneline Go.md",
+    "config/templater/Code - Multiline Go.md",
+    "config/js_scripts/prova.js.js",
     "config/templater/Format - Colored Text.md",
     "config/templater/Format - Pedice.md",
-    "config/templater/Code - Multiline Go.md",
-    "config/templater/Code - Oneline Go.md",
-    "config/templater/Format - Underline.md",
     "config/templater/Format - Blank Line.md",
-    "config/zoom.md",
     "config/js_scripts",
     "config/templater",
     "config",
@@ -208,7 +224,6 @@
     "copilot-conversations/Chat-2023_12_03-21_04_08.md",
     "copilot-conversations",
     "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
-    "config/zoom.md",
     "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
     "02 Programmazione I/Appunti Teoria/2023-10-31.md",
@@ -220,7 +235,6 @@
     "02 Programmazione I/Appunti Teoria/attachments/ASCII Table.png",
     "02 Programmazione I/Appunti Teoria/attachments/20231128_100040.jpg",
     "01 Architettura degli Elaboratori/Appunti Teoria/Mappe di Karnaugh.canvas",
-    "02 Programmazione I/Appunti Teoria/To Do.md",
     "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130102007.png",
     "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130100745.png",
     "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Fasi CPU.png",

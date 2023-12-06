@@ -2,7 +2,7 @@
   "version": "1.4.5",
   "display_language": "display",
   "filter_mode": "2",
-  "translation_service": "openai_translator",
+  "translation_service": "deepl",
   "security_setting": "none",
   "switch_button_action": "switch-both",
   "translation_command_action": "replace",
@@ -1039,10 +1039,10 @@
       "selected_languages": [
         "en"
       ],
-      "api_key": "",
+      "api_key": "24f36e3a-6764-964a-5188-17c8607e2756:fx",
       "auto_translate": false,
       "auto_translate_interval": 500,
-      "validated": null,
+      "validated": true,
       "available_languages": [
         "bg",
         "cs",
@@ -1108,7 +1108,8 @@
           "en"
         ]
       },
-      "version": "1.0.3"
+      "version": "1.0.3",
+      "host": "https://api-free.deepl.com/v2"
     },
     "fanyi_qq": {
       "selected_languages": [

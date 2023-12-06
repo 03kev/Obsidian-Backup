@@ -10,7 +10,13 @@
 - [x] Check both shortery and bettertouchtool. Both are great tools that can do in their full version lots of things
 - [ ] check if i can hide some shortcuts from the sc workflow in alfred, for example the ones that are only needed in shortery.
 - [ ] Check for better picture in picture extensions or applications -> check also the one of safari
-- [ ] an alfred workflow or a shortcut to change the output of my mac: useful to switch to headphones or to the mac's stereo
+- [x] an alfred workflow or a shortcut to change the output of my mac: useful to switch to headphones or to the mac's stereo
+	- [x] I have to find also a shortcut/workflow that connects my headphones with bluetooth -> audio switcher only changes the output, it doesn't connect my headphones
+- [x] made a shortcut that swaps cmd+q and shift+cmd+w in opera for closing the app
+- [x] shortcut for opera to open fullscreen with fn + f
+- [ ] look for the auto translate page plugin for opera -> search if it's possible with DeepL
+- [ ] Alfred workflow to change the input device of the mac
+	- [ ] Make possible that btf shows the status of the bluetooth device like btd
 
 
 - [ ]  Annoying problem: menu bar when switching between apps in fullscreen when hovering it with the mouse bugges.

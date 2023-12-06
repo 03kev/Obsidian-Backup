@@ -69,7 +69,10 @@
     ],
     "leftRibbon": [
       "Templater",
-      "Review flashcards"
+      "Review flashcards",
+      "Open in Headings Mode",
+      "Create new drawing",
+      "Open Symbols for the active editor"
     ]
   },
   "spacing": 8,
