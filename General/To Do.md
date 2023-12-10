@@ -18,6 +18,8 @@
 - [x] Alfred workflow to change the input device of the mac
 	- [ ] Make possible that btf shows the status of the bluetooth device like btd
 - [ ] Check how to change the right command and alt keys (i never use them)
+- [ ] alfred workflow that uses [Convert](https://superuser.com/questions/350201/convert-many-images-to-one-pdf-on-mac) in terminal to merge images in pdf
+- [ ] heroic game launcher for epic games games and Whisky for steam games
 
 
 - [ ]  Annoying problem: menu bar when switching between apps in fullscreen when hovering it with the mouse bugges.
