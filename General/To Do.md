@@ -1,4 +1,4 @@
-- [ ] Alfred: The shortcut workflow has the ability to let you choose the action from the universal action panel. Add this to the pdf workflow
+- [x] Alfred: The shortcut workflow has the ability to let you choose the action from the universal action panel. Add this to the pdf workflow
 - [x] Fix x2 F6 on karabiner. One possible fix would be to add in system settings the shortcut of Focus mode to f6, but i'd like to avoid this solution because i want f6 to be available
 	- [x] Add that when holding F6, it shuts down the computer. Already done a part of it, but the problem is that it also does the normal F6 clicked action, that is the don't disturb mode. Fixed it by activating f6 again: two times f6 = no times f6. <span style="color:rgb(255,0,0)">Would be better finding another solution, but at least this works.</span>
 - [ ] https://www.reddit.com/r/MacOS/comments/jy5ry8/m1_macbook_air_keysshortcut_for_keyboard/ check if i can use this instead of karabiner
@@ -15,13 +15,22 @@
 - [x] made a shortcut that swaps cmd+q and shift+cmd+w in opera for closing the app
 - [x] shortcut for opera to open fullscreen with fn + f
 - [ ] look for the auto translate page plugin for opera -> search if it's possible with DeepL
-- [ ] Alfred workflow to change the input device of the mac
+- [x] Alfred workflow to change the input device of the mac
 	- [ ] Make possible that btf shows the status of the bluetooth device like btd
+- [ ] Check how to change the right command and alt keys (i never use them)
 
 
 - [ ]  Annoying problem: menu bar when switching between apps in fullscreen when hovering it with the mouse bugges.
 - [ ] Fix Friendly Streaming bugs
 
 ***
-Great app: 
+
+Great apps: 
 - Paletro
+
+***
+
+- [ ] check all the system setting of the macbook and also some tips on yt
+- [x] find a better app for reading ebooks
+- [ ] wallpaper that changes according to weather
+- [ ] Set up english notes and this to do and general notes in notion
