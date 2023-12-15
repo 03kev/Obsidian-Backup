@@ -4,23 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "c60a4f81107dc313",
+        "id": "f6887139fb9c54cb",
         "type": "tabs",
         "children": [
           {
-            "id": "1f1aa3510b139bf9",
+            "id": "634a1bbecd128e87",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "939ca89f9cebecf3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "config/templater/Format - Centered Text.md",
+                "file": "02 Programmazione I/Appunti Teoria/2023-12-15.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 268.5,
+    "collapsed": true
   },
   "right": {
     "id": "09f2d08edbef226d",
@@ -86,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "config/templater/Format - Centered Text.md",
+                "file": "02 Programmazione I/Appunti Teoria/2023-12-15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "config/templater/Format - Centered Text.md",
+                "file": "02 Programmazione I/Appunti Teoria/2023-12-15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "config/templater/Format - Centered Text.md"
+                "file": "02 Programmazione I/Appunti Teoria/2023-12-15.md"
               }
             }
           },
@@ -145,21 +155,14 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "91918cc16f07bef9",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 311.5
+    "width": 315.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,31 +176,35 @@
       "audio-recorder:Start/stop recording": false,
       "cmdr:AI Commander: Generate text from prompt": false,
       "copilot:Copilot Chat": false,
+      "translate:Open translation view": false,
       "obsidian-excalidraw-plugin:Create new drawing": true,
       "darlal-switcher-plus:Open in Headings Mode": true,
-      "darlal-switcher-plus:Open Symbols for the active editor": true,
-      "translate:Open translation view": false
+      "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "1f1aa3510b139bf9",
+  "active": "4ef9c4c5aee2514a",
   "lastOpenFiles": [
+    "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
+    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "02 Programmazione I/Appunti Teoria/2023-12-15.md",
+    "02 Programmazione I/Appunti Teoria/To Do.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
+    "02 Programmazione I/Appunti Teoria/2023-12-12.md",
+    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
+    "02 Programmazione I/Appunti Teoria/attachments/Pasted image 20231212093107.png",
+    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "config/templater/Format - Centered Text.md",
     "01 Architettura degli Elaboratori/Appunti Teoria/Mappe di Karnaugh.canvas",
     "01 Architettura degli Elaboratori/Appunti Teoria/CPU a Singolo Ciclo.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
-    "config/templater/Format - Centered Text.md",
     "config/templater/Code - Multiline Go.md",
     "config/templater/Format - Links.md",
     "config/templater/Format - Colored Text.md",
     "02 Programmazione I/Appunti Teoria/attachments/20231128_100040.jpg",
-    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
-    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
-    "02 Programmazione I/Appunti Teoria/To Do.md",
     "config/templater/Markdown - Image.md",
     "config/copilot-conversations/Chat-2023_12_04-19_45_39.md",
     "config/copilot-conversations",
@@ -215,14 +222,11 @@
     "config/templater/Code - Oneline Go.md",
     "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130102007.png",
     "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231130100745.png",
-    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Fasi CPU.png",
     "config/js_scripts/prova.js.js",
     "My Code File.js",
     ".obsidian/snippets/general.css",
     "config/templater/Format - Apice.md",
-    "2023-11-07 Pointers.md",
     "attachments",
-    "copilot-conversations/Chat-2023_11_21-11_42_15.md",
     "03 Inglese/British Pronunciation",
     "03 Inglese",
     "Excalidraw",

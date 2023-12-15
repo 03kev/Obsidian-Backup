@@ -19,6 +19,7 @@
 	- [ ] Make possible that btf shows the status of the bluetooth device like btd
 - [ ] Check how to change the right command and alt keys (i never use them)
 - [ ] alfred workflow that uses [Convert](https://superuser.com/questions/350201/convert-many-images-to-one-pdf-on-mac) in terminal to merge images in pdf
+- [ ] ohmyzsh terminal with iterm2 + bat for terminal instead of cat
 
 - [ ] heroic game launcher for epic games games and Whisky for steam games
 
