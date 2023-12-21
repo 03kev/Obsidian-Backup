@@ -6,7 +6,7 @@
 - [x] Fix Alfred system groups icons and the fact that, for example, the battery panel opens the appearence one <span style="color:rgb(255,0,0)">Fixed only with the workflow (that is better, bu the icons are still missing)</span>
 - [x] Any kind of workflow/shortcut in order to open silicio EVERY time that I'll open spotify, and also to maybe close them both toghether
 - [x] Open spotify when pressing F8 instead of iTunes (that has to work when there is no audio or video in the background that can start or that can be paused)Done using noTunes
-- [ ] Hide applications, like logisim, from launchpad
+- [ ] Hide applications, like logisim, from launchpad -> <span style="color:rgb(255,0,0)">not possible</span>
 - [x] Check both shortery and bettertouchtool. Both are great tools that can do in their full version lots of things
 - [ ] <span style="color:rgb(77,152,219)">check if i can hide some shortcuts from the sc workflow in alfred, for example the ones that are only needed in shortery.</span>
 - [ ] <span style="color:rgb(77,152,219)">Check for better picture in picture extensions or applications -> check also the one of safari</span>
@@ -14,7 +14,7 @@
 	- [x] I have to find also a shortcut/workflow that connects my headphones with bluetooth -> audio switcher only changes the output, it doesn't connect my headphones
 - [x] made a shortcut that swaps cmd+q and shift+cmd+w in opera for closing the app
 - [x] shortcut for opera to open fullscreen with fn + f
-- [ ] look for the auto translate page plugin for opera -> search if it's possible with DeepL
+
 - [x] Alfred workflow to change the input device of the mac
 	- [ ] Make possible that btf shows the status of the bluetooth device like btd
 - [ ] Check how to change the right command and alt keys (i never use them)

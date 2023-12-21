@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "aeda1ad51ef2e7d0",
+        "id": "4167315cd67a6ee9",
         "type": "tabs",
         "children": [
           {
-            "id": "0506fe9ed35c8afc",
+            "id": "3d4bd0942715a915",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To Do.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c2e570fe679673ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To Do.md",
+                "file": "Enterteinment.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To Do.md",
+                "file": "Enterteinment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To Do.md",
+                "file": "Enterteinment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To Do.md"
+                "file": "Enterteinment.md"
               }
             }
           },
@@ -173,8 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311.5,
-    "collapsed": true
+    "width": 311.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,10 +179,10 @@
       "translate:Open translation view": false
     }
   },
-  "active": "c2e570fe679673ac",
+  "active": "3d4bd0942715a915",
   "lastOpenFiles": [
-    "Enterteinment.md",
     "To Do.md",
+    "Enterteinment.md",
     "config/zoom.md",
     "config/templater/Format - Links.md",
     "config/templater/Format - Underline.md",

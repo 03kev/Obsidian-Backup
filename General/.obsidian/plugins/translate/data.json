@@ -29,7 +29,9 @@
   "hide_attribution_default": false,
   "default_source_language": "it",
   "target_language_preference": "last",
-  "last_used_target_languages": [],
+  "last_used_target_languages": [
+    "en"
+  ],
   "default_target_language": "en",
   "filtered_services": [],
   "hotkeys": [
