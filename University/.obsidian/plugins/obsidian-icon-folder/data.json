@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasLanguage",
       "FarFlag",
       "FasPencil",
       "FabGofore",
-      "FasGear",
-      "FarNewspaper"
+      "FasGear"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -25,5 +25,6 @@
     "iconsBackgroundCheckEnabled": false
   },
   "01 Architettura degli Elaboratori": "FasMicrochip",
-  "02 Programmazione I": "FabGofore"
+  "02 Programmazione I": "FabGofore",
+  "03 Linguaggi Formali e Automi": "FasLanguage"
 }

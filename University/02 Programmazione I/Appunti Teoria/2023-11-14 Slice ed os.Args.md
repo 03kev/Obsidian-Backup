@@ -25,7 +25,7 @@ func main() {
 Make restituisce una nuova slice di una lunghezza e di una capacità opzionale date.
 ```go unwrap title:
 func main() {
-	var s []int = make([]int{}, 10, 20)
+	var s []int = make([]int, 10, 20)
 	Println(s, len(s), cap(s))
 }
 ```
