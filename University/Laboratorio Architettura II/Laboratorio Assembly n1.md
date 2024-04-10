@@ -32,3 +32,21 @@ Il MIPS permette di usare una pseudoistruzione che ottiene lo stesso effetto: `l
 Nello stesso modo questa pseudoistruzione può essere usato per salvare un campo immediate che supera i 16 bit: `li $5 0x12345678`. Viene poi tradotta dall'assembler in `lui $5 0x1234; ori $5 $1 0x5678`
 - Come registro di appoggia si usa un registro che per convenzione non è mai usato dai nostri programmi, ossia il registro 'ra', il registro numero $1.
 
+***
+#### Memoria in MIPS
+![[Pasted image 20240410112409.png | I C | 500]]
+
+- Il segmento riservato contiene il sistema operativo
+- Il segmento testo contiene le istruzioni del programma da eseguire (il PC è di default inizializzato all'inizio di questo segmento)
+- Il segmento dati contiene i dati, sia statici che dinamici
+
+##### Parola
+![[Pasted image 20240410113258.png | II R | 150]] In MIPS una parola occupa 32 bit, ossia 4 byte. Gli indirizzi di due parole consecutive differiscono di 4
+
+![[Pasted image 20240410112835.png | I C | 600]]
+##### Lettura e scrittura in RAM
+- Store: registro -> RAM
+- Load: RAM -> registro
+
+Il primo operando è il registro dal / al quale operare, mentre il secondo è il registro che contiene l'indirizzo RAM.
+Il numero prima delle parentesi è l'offset che viene aggiunto all'indirizzo. Se non è specificato, vale 0.
