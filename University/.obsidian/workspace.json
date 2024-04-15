@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "1df4d0b655278cb5",
+        "id": "1e9ab99f5c2848a2",
         "type": "tabs",
         "children": [
           {
-            "id": "b2321e76660e5818",
+            "id": "6166bbd890cfacd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Architettura degli Elaboratori/Appunti Teoria/CPU a Singolo Ciclo.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "a7063998210920f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Laboratorio Architettura II/Laboratorio Assembly n1.md",
+                "file": "Scheduling Dinamico.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laboratorio Architettura II/Laboratorio Assembly n1.md",
+                "file": "Scheduling Dinamico.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laboratorio Architettura II/Laboratorio Assembly n1.md",
+                "file": "Scheduling Dinamico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laboratorio Architettura II/Laboratorio Assembly n1.md"
+                "file": "Scheduling Dinamico.md"
               }
             }
           },
@@ -194,10 +180,17 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "a7063998210920f5",
+  "active": "6166bbd890cfacd6",
   "lastOpenFiles": [
-    "01 Architettura degli Elaboratori/Appunti Teoria/CPU a Singolo Ciclo.md",
+    "attachments/Pasted image 20240415110800.png",
+    "attachments",
+    "Scheduling Dinamico.md",
     "Laboratorio Architettura II/Laboratorio Assembly n1.md",
+    "Laboratorio Architettura II/Laboratorio Assembly n3.md",
+    "Laboratorio Architettura II/attachments/Pasted image 20240410140237.png",
+    "01 Architettura degli Elaboratori/Appunti Teoria/Mappe di Karnaugh.canvas",
+    "01 Architettura degli Elaboratori/Appunti Teoria/CPU a Singolo Ciclo.md",
+    "Laboratorio Architettura II/attachments/Pasted image 20240410132022.png",
     "02 Programmazione I/Appunti Teoria/2024-01-10.md",
     "02 Programmazione I/Appunti Teoria/2023-12-19.md",
     "02 Programmazione I/Appunti Teoria/2023-12-15.md",
@@ -220,7 +213,6 @@
     "02 Programmazione I/Appunti Teoria/2023-10-31.md",
     "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
     "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
-    "01 Architettura degli Elaboratori/Appunti Teoria/Mappe di Karnaugh.canvas",
     "Untitled.canvas",
     "03 Linguaggi Formali e Automi/|.md",
     "config/copilot-conversations/Chat-2024_03_05-10_23_37.md",
@@ -231,18 +223,13 @@
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
     "02 Programmazione I/Appunti Teoria/To Do.md",
     "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
-    "pkg.go.dev/log.md",
     "pkg.go.dev",
     "02 Programmazione I/Appunti Teoria/attachments/Pasted image 20231212093107.png",
-    "config/templater/Format - Centered Text.md",
     "02 Programmazione I/Appunti Teoria/attachments/20231128_100040.jpg",
-    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204093616.png",
-    "01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231204093145.png",
     "copilot-conversations",
     "config/js_scripts/prova.js.js",
     "My Code File.js",
     ".obsidian/snippets/general.css",
-    "03 Inglese/British Pronunciation",
     "Programmazione I/Untitled.canvas",
     "Architettura degli Elaboratori/Untitled/Untitled.canvas"
   ]
