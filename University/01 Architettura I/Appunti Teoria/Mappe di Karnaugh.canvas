@@ -10,7 +10,7 @@
 		{"id":"21c3e54dee55a3a0","type":"text","text":"Per ottenere un circuito semplice conviene lavorare sulla sua espressione Booleana","x":-250,"y":-301,"width":320,"height":103},
 		{"id":"5b6a57d18beb95e6","type":"text","text":"![[Pasted image 20231030090636.png| C | myInv]] ","x":856,"y":-525,"width":344,"height":266},
 		{"id":"8d7420f6090ecb8e","type":"text","text":"Si utilizza uno schema grafico di n-dimensioni per rappresentare questa stringa binaria","x":856,"y":-659,"width":344,"height":138},
-		{"id":"3c93a7c4a32fd5ab","type":"file","file":"01 Architettura degli Elaboratori/Appunti Teoria/attachments/Pasted image 20231030090604.png","x":665,"y":-659,"width":191,"height":400},
+		{"id":"3c93a7c4a32fd5ab","type":"file","file":"01 Architettura I/Appunti Teoria/attachments/Pasted image 20231030090604.png","x":665,"y":-659,"width":191,"height":400},
 		{"id":"3f2d4bda575817e2","type":"text","text":"Ad ogni lato corrisponde una variabile, quella che cambia percorrendolo","x":795,"y":5,"width":274,"height":104},
 		{"id":"0bec5474c1cfb8d3","type":"text","text":"Passiamo dalla rappresentazione grafica su n dimensioni a una rappresentazione piana su 𝟐 dimensioni","x":975,"y":218,"width":391,"height":129},
 		{"id":"15e7a9e5fda21ad7","type":"text","text":"Quelli in **<span style=\"font-weight:bold; color:rgb(255,0,0)\">rosso</span>** rappresentano i mintermini della funzione","x":1120,"y":-179,"width":272,"height":119},
