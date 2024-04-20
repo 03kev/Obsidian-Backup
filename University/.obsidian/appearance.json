@@ -8,8 +8,8 @@
   "enabledCssSnippets": [
     "snippets",
     "links",
-    "obsidian-default-theme",
     "navbar",
+    "obsidian-default-theme",
     "general"
   ],
   "baseFontSizeAction": false

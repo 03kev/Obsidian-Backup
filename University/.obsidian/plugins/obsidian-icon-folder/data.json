@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiMoveHorizontal",
       "FasMicrochip",
       "FasLanguage",
       "FarFlag",
-      "FasPencil",
-      "FabGofore"
+      "FasPencil"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -27,5 +27,6 @@
   "02 Programmazione I": "FabGofore",
   "03 Linguaggi Formali e Automi": "FasLanguage",
   "01 Architettura I": "FasMicrochip",
-  "01 Architettura II": "FasMicrochip"
+  "01 Architettura II": "FasMicrochip",
+  "04 Logica Matematica": "LiMoveHorizontal"
 }

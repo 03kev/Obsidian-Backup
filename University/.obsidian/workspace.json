@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Architettura II/Appunti Teoria/02 - Memories.md",
-                "mode": "source",
+                "file": "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "right": {
     "id": "09f2d08edbef226d",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 Architettura II/Appunti Teoria/02 - Memories.md",
+                "file": "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 Architettura II/Appunti Teoria/02 - Memories.md",
+                "file": "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 Architettura II/Appunti Teoria/02 - Memories.md"
+                "file": "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md"
               }
             }
           },
@@ -182,6 +183,12 @@
   },
   "active": "23450f5c3be860d6",
   "lastOpenFiles": [
+    "03 Linguaggi Formali e Automi/Automi a stati finiti.md",
+    "03 Linguaggi Formali e Automi/Lezione 3.md",
+    "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+    "01 Architettura II/Appunti Teoria/02 - Memories.md",
+    "04 Logica Matematica/Appunti Teoria",
+    "04 Logica Matematica",
     "01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
     "01 Architettura II/Laboratorio/Laboratorio Assembly n1.md",
     "01 Architettura II/Laboratorio/Laboratorio Assembly n3.md",
@@ -192,8 +199,6 @@
     "01 Architettura II/Laboratorio/attachments/Pasted image 20240410110908.png",
     "01 Architettura II/Laboratorio/attachments/Pasted image 20240410105316.png",
     "01 Architettura II/Laboratorio/attachments/Pasted image 20240410105019.png",
-    "03 Linguaggi Formali e Automi/Lezione 3.md",
-    "03 Linguaggi Formali e Automi/Automi a stati finiti.md",
     "02 Programmazione I/Appunti Teoria/To Do.md",
     "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
     "02 Programmazione I/Appunti Teoria/2024-01-10.md",
@@ -205,7 +210,6 @@
     "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
     "01 Architettura II/Appunti Teoria",
-    "01 Architettura II/Appunti Teoria/02 - Memories.md",
     "attachments/Pasted image 20240416114757.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240417095048.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240417093729.png",
@@ -227,8 +231,6 @@
     "config/copilot-conversations",
     "config/templater/Code - Multiline Go.md",
     "03 Linguaggi Formali e Automi",
-    "pkg.go.dev",
-    "copilot-conversations",
     "Programmazione I/Untitled.canvas",
     "Architettura degli Elaboratori/Untitled/Untitled.canvas"
   ]
