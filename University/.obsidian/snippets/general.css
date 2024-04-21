@@ -165,9 +165,10 @@ span.cm-quote {
   margin-right: 9px; /* SM left margin from dot to align with left margin of quotes from bar */
 }
 
+/*
 div .HyperMD-list-line.HyperMD-list-line-1.HyperMD-list-line-nobullet.cm-line {
   padding-inline-start: 24px !important; /* SM left margin of line afer list element done while holding shift*/
-}
+/*}  BUGGED IN SOURCE VIEW*/
 
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 
