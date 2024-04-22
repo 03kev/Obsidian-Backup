@@ -22,7 +22,7 @@ We have so to organise better the memories in order to fullfill this technologic
 #### Memory Hierarchy
 
 The memory system is organized like a tiered hierarchy. Data can be moved only between layers that are next to each other.
-- In the same way, also datas are organized in a hierarchy: the layer i contains a sublayer of data that are stored at the layer i+1
+- In the same way, also datas are organized in a hierarchy: the layer $i$ contains a subset of data that are stored at the layer $i+1$
 - Layers in between the CPU's registers and the Main Memory are called cache.
 <tab>
 </tab> 
@@ -31,16 +31,36 @@ The memory system is organized like a tiered hierarchy. Data can be moved only b
 ![[Pasted image 20240417095048.png | I C | 600]]
 
 All the memory accesses are managed following this hierarchy
-- Request of a *d* data to an *i* layer. Is *d* stored in *i*?
+- Request of a $d$ data to an $i$ layer. Is $d$ stored in $i$?
 	- Yes: writing or reading is done
-	- No: the request is forwarded to the layer i+1 below
+	- No: the request is forwarded to the layer $i+1$ below
 
 ( EXTRA: MEMORY SWAP: WHEN THE LOWER LAYERS ARE ALL FULL AND THE CPU NEEDS TO ALLOCATE PROCESSES ON THE MASS MEMORY (SSD OR HDD) -> THAT MEANS THAT THE CPU WILL FORWARD THE REQUEST UNTIL THE LAST LAYER OF THE HIERARCHY )
 
 #### Cache Memory
+![[Pasted image 20240422111048.png | II R | 300]]It's an associative memory: the information that we use to index the data is contained in the data itself.
+> The cache can be built, like for the central memory, with a one-dimensional array where every element is a line addressed by an index and containing a block of the data itself (associative memory).
 
-It's an associative memory: the information that we use to index the data is contained in the data itself.
+<span style="color:rgb(102, 102, 102)">Split Cache: the instruction cache can be splitted from the data cache</span>
 
-[ Terminology and Notation of Cache ]
+<span style="color:rgb(102, 102, 102)">[ Terminology and Notation of Cache -> slides ]</span>
+##### Direct Mapped Cache
+First issue: determine the line index $I(d)$ for a data $d$
 
-( Split Cache: the instruction cache can be splitted from the data cache )
+Direct mapping: to every block in the central memory is associated an unique index of the cache.
+- Issue: there are more blocks in the memory rather than the lines of the cache <span style="color:rgb(102, 102, 102)">(the cache, as a matter of fact, is only a small subset of the memory)</span>, so a line index <span style="color:rgb(102, 102, 102)">(indice di linea)</span> is shared with more central memory's blocks.
+
+Solution:
+- Find the block's number in memory from the $d$ address:
+  $N(d) = div(M(d),\ B)$
+- Find the cache index to whom is assigned the block $N(d)$:
+  $I(d) = mod(N(d),\ L)$
+
+Now every memory block has preassigned a place in the cache.
+
+<span style="color:rgb(102, 102, 102)">[ Look at the examples on the slides. 3 examples: block smaller than the word, block equal to the word, block bigger than the word ]</span>
+
+
+
+  
+
