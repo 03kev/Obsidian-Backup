@@ -25,7 +25,7 @@ Le proposizioni atomiche sono le più semplici frasi con senso compiuto interpre
 	- sintassi
 2) Una semantica, caraterizzata da:
 	- circostanze possibili
-	- interpretazione, procedimento attraverso il quale attribuiamo un valore di verità T o F alla proposizione in una data circostanza
+	- interpretazione, procedimento attraverso il quale attribuiamo un valore di verità $T$ o $F$ alla proposizione in una data circostanza
 
 La **Arity** è un numero che ci dice di quante costanti il predicato ha bisogno per formare un enunciato.
 
