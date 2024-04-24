@@ -35,13 +35,14 @@ All the memory accesses are managed following this hierarchy
 	- Yes: writing or reading is done
 	- No: the request is forwarded to the layer $i+1$ below
 
-( EXTRA: MEMORY SWAP: WHEN THE LOWER LAYERS ARE ALL FULL AND THE CPU NEEDS TO ALLOCATE PROCESSES ON THE MASS MEMORY (SSD OR HDD) -> THAT MEANS THAT THE CPU WILL FORWARD THE REQUEST UNTIL THE LAST LAYER OF THE HIERARCHY )
+( EXTRA -> MEMORY SWAP: WHEN THE LOWER LAYERS ARE ALL FULL AND THE CPU NEEDS TO ALLOCATE PROCESSES ON THE MASS MEMORY (SSD OR HDD) -> THAT MEANS THAT THE CPU WILL FORWARD THE REQUEST UP TO THE LAST LAYER OF THE HIERARCHY )
 
 #### Cache Memory
 ![[Pasted image 20240422111048.png | II R | 300]]It's an associative memory: the information that we use to index the data is contained in the data itself.
 > The cache can be built, like for the central memory, with a one-dimensional array where every element is a line addressed by an index and containing a block of the data itself (associative memory).
 
 <span style="color:rgb(102, 102, 102)">Split Cache: the instruction cache can be split from the data cache</span>
+
 <span style="color:rgb(102, 102, 102)">[ Terminology and Notation of Cache -> slides ]</span>
 ##### Direct Mapped Cache
 First issue: determine the line index $I(d)$ for a data $d$
@@ -57,9 +58,71 @@ Solution:
 
 Now every memory block has preassigned a place in the cache.
 
-<span style="color:rgb(102, 102, 102)">[ Look at the examples on the slides. 3 examples: block smaller than the word, block equal to the word, block bigger than the word ]</span>
+<span style="color:rgb(102, 102, 102)">[ Look at the examples on the slides about those two formulas. 3 examples: block smaller than the word, block equal to the word, block bigger than the word ]</span>
 
+***
 
+- If the central memory is organised in blocks, those blocks are in number far greater than the cache lines -> in a single cache line correspond more central memory blocks (like in the examples)
+	- It's not sufficient to assign those blocks to the cache lines: we have to identify the specific block that is effectively stored in the cache.
 
-  
+- From the cache line, we also cannot find the address of the data contained in it, but it is also true that we have a restricted area: we know all the addresses of every memory block that could be stored in that specific cache line.
 
+We're going so to explore this issue: finding the address of the data stored in the cache line.
+
+###### Integer division for base power (divisione intera per potenza della base)
+
+- The cache line number is always a power of two: $L = 2^k$
+- The dimension of a block is typically defined by an integer number of words: if in the block are stored $2^m$ words that would mean that $B = 2^{m+2}$ -> also $B$ is a power of $2$. 
+
+The previous calculus, done in the CPU, are integer divisions between a binary integer unsigned and a power of $2$.
+
+Given a binary integer unsigned $p$ codified in $b$ bit, by the integer division between $p$ and the $k$-th power of two $2^k$ we have the following:
+- The quotient of the division is given by the $b-k$ most significant digits of $p$ (that are extractable with a shift to the right of $k$ positions applied to $p$)
+- The remainder of the division is given by the $k$ digits less significant of $p$.
+
+![[Pasted image 20240424093231.png | I]]
+
+We can therefore use this property to implement the access to the cache using the direct mapping.
+
+Considering a cache with $L=2^k$ and $B=2^{m+2}$, we can calculate the line index of a data $d$ like: 
+
+![[Pasted image 20240424093526.png | I]]
+
+So, given a cache with $L$ lines, each of them containing blocks of $B$ bytes, and $M(d)$, the address of the byte or of the word we have to access:
+
+![[Pasted image 20240424094214.png | I]]
+**[...]**
+
+*** 
+
+**Third problem**: the copy of the data that is contained in the cache may be not updated. So we have to add a bit of validity.
+
+**[...]**
+
+###### Size of the cache
+
+**[...]**
+
+###### Direct mapped cache implementation
+
+**[...]**
+
+*** 
+
+##### Miss management 
+
+Given the address of a data $M(d)$ now we can tell where to search for it in the cache and to establish whether the data is valid or not.
+
+But when checking for the validity bit and comparing it with the tag, we can also receive back a cache miss.
+- When that happens the CPU stops and the block $N(d)$ is moved from the central memory to the cache in the line $I(d)$. 
+  Then the validity bit of the line $I(d)$ is set to one and the CPU can start again, doing a cache hit.
+
+###### Writing access
+
+If an instruction requires for writing access to a data $d$:
+
+- It's needed to check whether the block $N(d)$ is available in cache or not.
+	- If it is, the writing is done to the copy of the data in the cache -> write hit.
+	- If it's not we have a write miss. We manage the miss with the previously seen procedure, and once the block containing the data is moved in the cache we proceed with a write hit.
+
+- Now we have another problem: the coherence of the cache. After writing the data in the cache,
