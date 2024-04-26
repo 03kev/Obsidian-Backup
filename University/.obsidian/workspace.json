@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "923a2b7614781478",
+        "id": "6edf9ca973c5d8d0",
         "type": "tabs",
         "children": [
           {
-            "id": "5f6e1637f4043eb8",
+            "id": "6be6d7ed86123ae5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Architettura II/Appunti Teoria/02 - Memories.md",
-                "mode": "source",
+                "file": "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 Architettura II/Appunti Teoria/02 - Memories.md",
+                "file": "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 Architettura II/Appunti Teoria/02 - Memories.md",
+                "file": "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 Architettura II/Appunti Teoria/02 - Memories.md"
+                "file": "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md"
               }
             }
           },
@@ -181,35 +181,38 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "5f6e1637f4043eb8",
+  "active": "6be6d7ed86123ae5",
   "lastOpenFiles": [
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240424094214.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240424093526.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240424093231.png",
-    "01 Architettura II/Laboratorio/Laboratorio Assembly n3.md",
-    "01 Architettura II/Laboratorio/Laboratorio Assembly n1.md",
-    "01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
+    "02 Programmazione I/Appunti Teoria/2023-12-12.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
+    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
+    "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410105019.png",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410105316.png",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410110908.png",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240426165113.png",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410140237.png",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410113258.png",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410132022.png",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410112835.png",
+    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410112409.png",
+    "01 Architettura II/Laboratorio/Laboratorio Assembly 03.md",
     "01 Architettura II/Appunti Teoria/02 - Memories.md",
-    "config/js_scripts/prova.js.js",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240422111048.png",
+    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
+    "Recursivity.md",
     "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240424094214.png",
+    "01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
+    "config/js_scripts/prova.js.js",
     "03 Linguaggi Formali e Automi/Automi a stati finiti.md",
     "03 Linguaggi Formali e Automi/Lezione 3.md",
     "04 Logica Matematica/Appunti Teoria",
     "04 Logica Matematica",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410140237.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410132022.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410113258.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410112409.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410110908.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410105316.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240410105019.png",
     "02 Programmazione I/Appunti Teoria/To Do.md",
     "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
     "02 Programmazione I/Appunti Teoria/2024-01-10.md",
     "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
     "02 Programmazione I/Appunti Teoria/2023-12-15.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-12.md",
     "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
     "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
     "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
@@ -217,19 +220,15 @@
     "01 Architettura II/Appunti Teoria",
     "attachments",
     "02 Programmazione I/Appunti Teoria/2023-12-19.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
     "01 Architettura II",
     "01 Architettura II/Appunti Teoria/attachments",
     "01 Architettura I/Appunti Teoria/Mappe di Karnaugh.canvas",
     "01 Architettura I/Appunti Teoria/CPU a Singolo Ciclo.md",
     "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
     "01 Architettura II/Laboratorio",
     "01 Architettura II/Laboratorio/attachments",
-    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
     "Untitled.canvas",
     "03 Linguaggi Formali e Automi/|.md",
-    "config/copilot-conversations/Chat-2024_03_05-10_23_37.md",
     "config/copilot-conversations",
     "Programmazione I/Untitled.canvas",
     "Architettura degli Elaboratori/Untitled/Untitled.canvas"

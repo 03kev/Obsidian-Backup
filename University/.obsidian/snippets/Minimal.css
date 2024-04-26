@@ -1,0 +1,87 @@
+
+
+body {
+    --h1-size: 22px;
+    --h1-weight: 900;
+    --h1-line-height: 20px;
+    --h2-size: 16px;
+    --h2-weight: 800;
+    --h2-line-height: 0px !important;
+    --h2-line-break-after: avoid !important;
+    --h2-height: 0px !important;
+    --list-indent: 5px;
+    --list-spacing: 0px;
+    font-size: 11pt;
+    line-height: 1.08;
+    --br-margin: 100px;
+}
+
+ /* replace the default "bullet" */
+:is(.cm-fold-indicator:hover, 
+*)~.cm-formatting.cm-formatting-list .list-bullet::after,
+.list-bullet::after {
+    content: '-';
+    margin-left: -10px;
+    width: 10px;
+    height: unset;
+    color: white;
+    background-color: unset;
+    box-shadow: none;
+}
+
+.is-collapsed~.cm-formatting-list .list-bullet::after,
+li.is-collapsed .list-bullet::after {
+    color: var(--list-marker-color-collapsed);
+    box-shadow: none;
+    background-color: transparent;
+}
+
+@media print {
+    @page {
+        margin: 0.5cm !important;
+        width: 100% !important;
+     }
+
+    :root {
+        --body-font-family: "Suisse Intl";
+        --header-font-family: "Suisse Intl";
+        --code-font-family: "SuisseInt'lMono Nerd Font";
+    }
+
+    li {
+        list-style-type: "- ";
+        /* margin-left: -10px; */
+        margin-left: 5px;
+        height: unset;
+        color: black;
+    }
+
+    body {
+        width: 108% !important; /* dal tuo 100 a 108*/
+        margin-top: 0px;
+        margin-bottom: 0px !important;
+        margin-left: -40px !important;
+        margin-right: -80px !important;
+        padding: 0 !important;
+        background: none;
+        font-size: 11pt;
+        max-width: 120% !important;
+
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 0px;
+        break-after: avoid;
+        height: 18px;
+    }
+
+    p {
+        font-size: 11pt;
+        line-height: 1.08;
+        padding: 0;
+        margin-right: -75px;
+        max-width: 100% !important; /* dal tuo 120 a 100*/
+    }
+}

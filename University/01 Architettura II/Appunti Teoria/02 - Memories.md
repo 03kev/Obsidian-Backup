@@ -20,7 +20,6 @@ We have so to organise better the memories in order to fill this technological g
 10<sup>3</sup> = 1000; 2<sup>10</sup> = 1024
 
 #### Memory Hierarchy
-
 The memory system is organized like a tiered hierarchy. Data can be moved only between layers that are next to each other.
 - In the same way, also data are organized in a hierarchy: the layer $i$ contains a subset of data that are stored at the layer $i+1$
 - Layers in between the CPU's registers and the Main Memory are called cache.
