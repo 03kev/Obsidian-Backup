@@ -11,7 +11,7 @@
 	- <span style="color:rgb(124, 124, 124)">EPC, Cause, BadVAddr, Status: vengono usati nella gestione delle eccezioni</span>
 
 ##### Istruzioni aritmetiche
-![[Pasted image 20240410105019.png | I]]
+![[Pasted image 20240410105019.png | I C | 740]]
 - Come si può vedere dalla tabella, sommare due registri e sommare un registro con una costante richiedono due comandi diversi: add e addi
 - I comandi unsigned ignorano l'overflow, mentre quelli signed lo riportano
 
@@ -59,13 +59,15 @@ Nello stesso modo questa pseudoistruzione può essere usata per salvare un campo
 
 La memoria è indirizzata come un vettore: indirizzo base + offset identificano la posizione della parola da scrivere o leggere. L'offset è in byte.
 
+<span style="color:rgb(124, 124, 124)">[ Istruzione LA: LOAD ADDRESS ]</span>
+
 #### Direttive Assembler
 - `.data` dice all'assembler che ciò che segue sono dati da memorizzare nel segmento *data* della RAM, e lo fa nell'ordine specificato. 
 - `.text` invece gli dice che ciò che segue sono istruzioni da memorizzare nel segmento *text* della RAM, e nell'ordine specificato.
 
 ###### Vettori
 Si consideri un vettore $V$ dove ogni elemento $V[\ i\ ]$ è una parola di memoria (32 bit). 
-- Gli array sono memorizzati in modo sequenzial: si consideri $b$ come il registro base di $V$, che è anche l'indirizzo di $V[\ 0\ ]$. L'elemento $i$-esimo ha indirizzo $b\ +\  4*i$. 
+- Gli array sono memorizzati in modo sequenziale: si consideri $b$ come il registro base di $V$, che è anche l'indirizzo di $V[\ 0\ ]$. L'elemento $i$-esimo ha indirizzo $b\ +\  4*i$. 
 
 ```wasm unwrap title:"Vettori"
 .data
