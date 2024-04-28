@@ -204,6 +204,87 @@ main:
 ```
 
 ***
-#### Lo Stack
+#### Uso dello Stack
 ![[Pasted image 20240427163805.png | I C | 750]]
+
+##### Aree di memoria
+- **Area riservata**: contiene il codice per il kernel del sistema operativo. Non si può usare.
+- **Area text**: contiene il programma, ossia le istruzioni codificate nei segmenti .text del nostro programma.
+- **Area dati statici**:
+	- Non cambia di dimensione durante l'esecuzione
+	- Ad alto livello contiene le variabili globali e statiche (rimangono allocate durante tutta l'esecuzione)
+	- In MIPS contiene i dati che scriviamo nei segmenti .data
+	- La sua dimensione cambia in base al programma, a seconda di quanti dati usiamo in .data
+- **Dati dinamici**
+	- Stack
+	- Memoria libera
+	- Heap
+
+###### Stack
+Lo stack comincia dal "tetto" in alto della memoria. Si espande verso il basso e contrae verso l'alto durante l'esecuzione del programma (quindi dinamicamente).
+- Ad alto livello è usata per le variabili locali
+
+In MIPS si usa un apposito registro, lo `$sp` (il numero $29) per tenere traccia di dove è arrivato lo stack.
+- Lo `$sp` contiene l'indirizzo dell'ultimo word usato dallo stack. È inizializzato dal sistema, ma è ruolo del nostro programma tenerlo aggiornato.
+
+###### Heap
+Lo heap comincia da dove finisce il segmento di dati statici. Si espande verso l'alto e contrae verso il basso durante l'esecuzione del programma (quindi dinamicamente).
+- Ad alto livello è usata per le variabili allocate dinamicamente.
+	- Si espande quando vengono allocate con comandi come new, alloc, malloc, ecc...
+	- Si contrae quando vengono deallocate con comandi come free, delete o dal garbage collector.
+
+Il suo uso in MIPS è rimandato a una lezione successiva
+
+###### Memoria libera
+È la zona di memoria fra stack e heap, che può essere occupata da l'una o dall'altra. Per questo motivo viene occupata da quello dei due che si espande per primo, ed è più efficiente in quanto non riserva una zona di memoria fissa per lo stack e una per lo heap.
+
+Se si esaurisce, causa un errore a tempo di esecuzione:
+- "stack overflow" se lo stack scende troppo e invade lo heap
+- "heap overflow" se lo heap sale troppo e invade lo stack
+
+###### Stack Pointer
+Il registro stack pointer `$sp` contiene sempre l'indirizzo della parola che sta in cima allo stack. Questa parola è l'ultima ad essere stata inserita nello stack e sarà la prima ad essere rimossa.
+
+![[Pasted image 20240427172814.png | I C | 750]]
+
+###### Register Spilling
+Salvare dati sullo stack può servire per fare **spilling di registri**.
+- In generale un programma potrebbe lavorare su un numero di variabili maggiore rispetto al numero di registri disponibili. Non è perciò possibile avere tutti i dati nel banco registri nello stesso momento.
+
+Una soluzione è tenere nei registri i dati di cui si ha maggior bisogno mentre i dati di cui non si ha una urgente necessità vengono spostati temporaneamente in memoria (con un push sullo stack).
+- L'operazione di trasferire variabili da registri a memoria è detta **register spilling**
+
+L'area di memoria di solito utilizzata per questa operazione è lo stack
+<tab>
+</tab> 
+
+<span style="color:rgb(124, 124, 124)">Esempio:</span>
+- <span style="color:rgb(124, 124, 124)">Si supponga di poter utilizzare solo i registri $t0 $t1</span>
+- <span style="color:rgb(124, 124, 124)">Bisogna calcolare il prodotto di due variabili che stanno nel segmento dati e i cui indirizzi sono identificati dalle label x e y</span>
+
+```wasm unwrap title:"Register Spilling"
+	.data
+x:  .word 3
+y:  .word 4
+	
+	.text
+	.globl main
+main:
+	
+	la $t0 x
+	lw $t1 0($t0)
+	
+	addi $sp $sp -4
+	sw $t1 0($sp) (; spilling (push) ;)
+	
+	la $t0 y
+	lw $t1 0($t0)
+	
+	lw $t0 0($sp)
+	addi $sp $sp 4 (; spilling (pop) ;)
+	
+	mult $t0 $t1
+	mflo $t0
+```
+
 

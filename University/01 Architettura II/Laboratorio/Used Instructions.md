@@ -1,0 +1,3 @@
+- la
+- move
+- syscall 56
