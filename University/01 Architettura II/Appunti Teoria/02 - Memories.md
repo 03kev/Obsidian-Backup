@@ -34,13 +34,13 @@ All the memory accesses are managed following this hierarchy
 	- Yes: writing or reading is done
 	- No: the request is forwarded to the layer $i+1$ below
 
-( EXTRA -> MEMORY SWAP: WHEN THE LOWER LAYERS ARE ALL FULL AND THE CPU NEEDS TO ALLOCATE PROCESSES ON THE MASS MEMORY (SSD OR HDD) -> THAT MEANS THAT THE CPU WILL FORWARD THE REQUEST UP TO THE LAST LAYER OF THE HIERARCHY )
+<span style="color:rgb(124, 124, 124)">( EXTRA -> MEMORY SWAP: WHEN THE LOWER LAYERS ARE ALL FULL AND THE CPU NEEDS TO ALLOCATE PROCESSES ON THE MASS MEMORY (SSD OR HDD) -> THAT MEANS THAT THE CPU WILL FORWARD THE REQUEST UP TO THE LAST LAYER OF THE HIERARCHY )</span>
 
 #### Cache Memory
 ![[Pasted image 20240422111048.png | II R | 300]]It's an associative memory: the information that we use to index the data is contained in the data itself.
 > The cache can be built, like for the central memory, with a one-dimensional array where every element is a line addressed by an index and containing a block of the data itself (associative memory).
 
-<span style="color:rgb(102, 102, 102)">Split Cache: the instruction cache can be split from the data cache</span>
+<span style="color:rgb(124, 124, 124)">Split Cache: the instruction cache can be split from the data cache</span>
 
 <span style="color:rgb(102, 102, 102)">[ Terminology and Notation of Cache -> slides ]</span>
 ##### Direct Mapped Cache
@@ -94,7 +94,7 @@ So, given a cache with $L$ lines, each of them containing blocks of $B$ bytes, a
 
 *** 
 
-**Third problem**: the copy of the data that is contained in the cache may be not updated. So we have to add a bit of validity.
+**Third problem**: the copy of the data that is contained in the cache may not be updated. So we have to add a bit of validity.
 
 **[...]**
 
@@ -118,10 +118,24 @@ But when checking for the validity bit and comparing it with the tag, we can als
 
 ###### Writing access
 
-If an instruction requires for writing access to a data $d$:
+If an instruction requires writing access to a data $d$:
 
 - It's needed to check whether the block $N(d)$ is available in cache or not.
 	- If it is, the writing is done to the copy of the data in the cache -> write hit.
 	- If it's not we have a write miss. We manage the miss with the previously seen procedure, and once the block containing the data is moved in the cache we proceed with a write hit.
 
-- Now we have another problem: the coherence of the cache. After writing the data in the cache,
+- Now we have another problem: the coherence of the cache. After writing the data in the cache, its version in the central memory is outdated. To fix these, we can adopt two simple solutions:
+	- write-through: when the data is written in the cache, it's immediately also written in memory
+	- write-back: writing operations only happen in the cache. When a block in the cache is being replaced, before the overwrite its copy in the memory is updated.
+
+***
+
+In a cache mapped directly the data $d$ can only be stored in the line $I(d)$ of the cache
+- Access operations are therefore simple
+- There is little flexibility when it comes to using memory efficiently
+	-  A data can be located only on a single specific cache line -> not flexible
+	- For example, a program that has on some cache lines a strong competition between blocks mapped on them, while other line caches are rarely used.
+
+So we need to create a more flexible cache -> therefore it'll have to assign a data to whatever cache line.
+![[Pasted image 20240429110329.png | I C | 600]]
+####  Cache Associative
