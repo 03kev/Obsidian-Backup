@@ -138,4 +138,30 @@ In a cache mapped directly the data $d$ can only be stored in the line $I(d)$ of
 
 So we need to create a more flexible cache -> therefore it'll have to assign a data to whatever cache line.
 ![[Pasted image 20240429110329.png | I C | 600]]
-####  Cache Associative
+##### Fully-associative cache
+<span style="color:rgb(124, 124, 124)">The Branch Target Buffer was an example of an associative memory</span>
+
+We've got a problem: in the direct-mapped cache, the address of the data was determined by the index of the cache line in which it was stored. Now that a data can be on every possible cache line, we can't do that anymore.
+
+Instead of using the index cache line, we could use part of the data itself -> that's the reason why it's called associative.
+
+In the cache, there are L ≥ 1 physical lines, but we could consider it like it's just one single line: therefore $L = 1$, and $k = 0$.
+- The tag is now made by all the $32-(m+2)$ bits that of the block number.
+
+**[...]**
+##### Set-associative cache
+
+The set-associative cache is a generalisation of the previous two types. The cache is partitioned into sets, and every set has storage for $n$ blocks. Every data is associated with a set, and inside it the data can be located in every place within the $n$ possible places.
+
+![[Pasted image 20240429120024.png | I C | 470]]
+
+**[...]** -> Look at notes on paper
+
+***
+
+##### Block Substitution
+If we've got an associative memory, we have to decide which of the n places we'll overwrite when we have a miss (we have to put the new data in the cache, and to do so we have to overwrite one of the places in the set).
+- Randomly
+- Least-Recently Used (LRU): we overwrite the block that is not accessed by the most time
+- Pseudo-LRU: a simplified version of LRU
+
