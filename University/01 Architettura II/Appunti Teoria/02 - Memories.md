@@ -165,3 +165,14 @@ If we've got an associative memory, we have to decide which of the n places we'l
 - Least-Recently Used (LRU): we overwrite the block that is not accessed by the most time
 - Pseudo-LRU: a simplified version of LRU
 
+###### LRU
+- Use bits approach
+	- If we decide to give each line a use field, then the cache will have to reserve $n \times log_{2} (n)$ bits for it in each set <span style="color:rgb(124, 124, 124)">(example in slide 171)</span>
+![[Pasted image 20240508093308.png | I C | 600 ]]
+- Pseudo-LRU based on BST
+	- The cache will have to reserve $n \times log_{2} (n)$ bits for it in each set
+
+![[Pasted image 20240508101121.png | I C | ]]
+
+**[...]** <span style="color:rgb(124, 124, 124)">example in the slides</span> 
+
