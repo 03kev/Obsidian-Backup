@@ -18,7 +18,7 @@
 ##### Inizializzare i registri
 Non esiste un comando per inizializzare direttamente i registri: per farlo si usa il registro speciale $zero:
 `addi $5 $zero 2` somma 2 a 0 e lo salva nel registro $5.
-
+2
 Essendo però la costante in addi direttamente salvata nell'istruzione mips, a questa vengono concessi solo 16 bit per il campo immediate, ossia quello in cui viene salvato il valore della costante (gli altri servono per l'opcode e per i registri da usare).
 ![[Pasted image 20240410110908.png | II]]
 

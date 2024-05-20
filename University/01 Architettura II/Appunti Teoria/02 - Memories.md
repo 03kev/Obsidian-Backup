@@ -176,3 +176,7 @@ If we've got an associative memory, we have to decide which of the n places we'l
 
 **[...]** <span style="color:rgb(124, 124, 124)">example in the slides</span> 
 
+*** 
+**[...]**
+
+Every data stored in the memory has parity-bit equal to zero.
