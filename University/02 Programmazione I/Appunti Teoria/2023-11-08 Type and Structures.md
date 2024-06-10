@@ -49,8 +49,8 @@ func main() {
 }
 ```
 
-##### Strutture definite come Tipi
-Le strutture possono essere 
+##### Strutture definite come tipi
+Le strutture possono essere  definite come tipi
 ```go unwrap title:
 type Person struct {
 	age int
@@ -65,16 +65,16 @@ type Address struct {
 }
 
 type Identity struct {
-	info Person //da fare il caso con il puntatore
-	residence Address
+	info *Person // La struttura Person non viene ricopiata ma viene passato il suo indirizzo
+	residence Address // viene ricopiata la struttura Address qui
 	worker bool
 }
 
 func main() {
-	s1 := firstStruct{s:"Prova", f:2.1} //Le variabili vanno messe tramite chiave. Quelle non assegnate hanno il valore di default del tipo
-	s2 := firstStruct{1, 2, 3.2, "Ciao"} //Le variabili vanno messe tutte ed in ordine
-	t := secondStruct{s1, .6}
-	Print(s1, "\n", s2, "\n", t)
+	who := Person{age:12, name: "Filippo", height:1.71} //Le variabili vanno messe tramite chiave. Quelle non assegnate hanno il valore di default del tipo
+	residence := Address{"Parma", "Verdi", 8} //Le variabili vanno messe tutte ed in ordine
+	id := Identity{&who, residence, true}
+	Print(who, "\n", residence, "\n", id, "\n", *id.info, id.info)
 }
 ```
 

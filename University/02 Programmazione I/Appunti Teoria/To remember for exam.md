@@ -58,3 +58,72 @@ Il for è l'unica istruzione per eseguire un ciclo in go
 
 Ciclo for ternario:
 `{go}for i := 0; i < n; i ++ { ... }` 
+`for 1°_ISTRUZIONE; ESPRESSIONE_BOOLEANA; 2°_ISTRUZIONE { CORPO }`
+
+- Viene eseguita la 1° istruzione (di solito di assegnamento/dichiarazione di variabile pari a 0)
+- Si controlla l'espressione booleana che, se restituisce true, fa proseguire il ciclo. In caso contrario si esce dal ciclo.
+- Si esegue il corpo
+- Viene eseguita la 2° istruzione (di solito di incremento della variabile assegnata/dichiarata)
+- Si prosegue ricontrollando l'espressione booleana, eseguendo il corpo, ecc...
+
+Tutte le 3 parti del ciclo sono omettibili. Se si omette l'espressione booleana, di default diventa true.
+
+`{go}for i := n - 1; i >= 0; i-- { ... }` Forma idiomatica di un ciclo in discesa
+
+###### Conversione di tipo
+Nelle espressioni di go bisogna utilizzare variabili dello stesso tipo -> int * float64 = error
+`{go}b := int(a)`
+`{go}b := float64(a)` 
+
+###### Break
+si usa per uscire da un ciclo
+
+###### Shadowing
+Dichiarare in un contesto lessicale più piccolo (in un sotto-blocco) una variabile che esiste in un contesto lessicale più ampio.
+
+```go unwrap title:
+func main() {
+	n := 3;
+	if n > 0 {
+		n := 2
+		Println(n)
+	}
+	Println(n)
+	//Output: 2, 3. n è in shadowing
+}
+```
+
+```go unwrap title:
+func main() {
+	n := 3;
+	if n > 0 {
+		n, a := 2, 5
+		Println(n, a)
+	}
+	Println(n)
+	/* n non è in shadowing per via dell'indebolimento dell'asssegnamento multiplo
+	   parallelo: n non viene ridichiarata in oscuramento ma solo riassegnata, 
+	   mentre a viene dichiarata. */
+}
+```
+
+
+###### Funzioni
+```go unwrap title:
+func main() {
+	func nome(n int) (int, int) {
+		return n * 2, n / 2
+	}
+}
+```
+
+```go unwrap title:
+func main() {
+	func nome(n int) (c int) {
+		c = n * 2
+		return
+	}
+}
+```
+
+`{go}c`  variabile locale alla funzione. Assegnando il valore alla variabile decidiamo il valore restituito dalla funzione senza doverlo specificare nel return.

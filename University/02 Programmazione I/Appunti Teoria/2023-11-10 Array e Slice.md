@@ -19,15 +19,14 @@ func main() {
 }
 ```
 
-Definire i valori della slice in indici stabiliti: <span style="color:#ad0b0b">/** CHECK</span>
+È possibile definire i valori dell'array in indici stabiliti: 
 ```go unwrap title:
 func main() {
 	var a[5]int = [5]int{1:-1, 3:21}
-	Println(a)
+	Println(a, &a[0], &a[1], &a[2], &a[3], &a[4])
 }
 ```
-
-( con &a[i] ottieni l'indirizzo di memoria dell'elemento i-esimo nell'array ) <span style="color:#ad0b0b">**/</span>
+- Con &a[i] si ottiene l'indirizzo di memoria dell'elemento i-esimo nell'array 
 #### Slice
 Il modo in cui funzionano è molto specifico di Go. La slice è una sequenza di elementi di tipo omogenee, un array, ma di lunghezza varriabile.
 Le slice però, a differenza degli array, non sono dei blocchi di memoria ma si comportano come dei puntatori, in quanto non hanno una grandezza definita e potrebbero aver bisogno di essere salvate in parti di memoria diverse.
@@ -81,9 +80,9 @@ La slice, essendo un puntatore, ha molti comportamenti che agiscono come tale: p
 - Quando si fa append Go guarda se la capacità è maggiore della lunghezza: capisce se l'array può ancora contenere nuovi elementi. 
   Append crea una nuova slice che ha lo stesso puntatore della slice originale, ma ha la lunghezza aumentata (e nel mentre aggiunge il valore nell'array) e la capacità invariata.
   Se la lunghezza però è uguale alla capacità (l'array è quindi pieno), Go alloca in memoria un nuovo array grande il doppio del precedente. La prima metà del nuovo array è uguale a quello originale, poi gli viene aggiunto il contenuto dell'append e ha lunghezza aumentata e capacità doppia. Se poi non c'è poi nessuna slice che punta all'array originale, questo viene successivamente tolto dal garbage collector.
-- subslicing `slice[x1:x2]`: restituisce una nuova slice con lo stesso puntatore della slice originale spostato di tante volte quanto l'indice iniziale x2. La lunghezza è pari alla differenza tra i valori x1 e x2 passati e la capacità è uguale a quella originale meno l'indice di partenza x1. 
+- subslicing `slice[x1:x2]`: restituisce una nuova slice con lo stesso puntatore della slice originale spostato di tante volte quanto l'indice iniziale `x2`. La lunghezza è pari alla differenza tra i valori `x1` e `x2` passati e la capacità è uguale a quella originale meno l'indice di partenza `x1`. 
   Facendo un append alla subslice, si vanno a sovrascrivere gli elementi successivi della slice originale, e modificando un valore in una delle due slice, cambia anche nell'altra.
-	- facendo lo subslicing di un array (oltre ad ottenere l'aliasing) si ottiene l'unico caso 
+	- facendo lo subslicing di un array (oltre ad ottenere l'aliasing) si ottiene l'unico caso [?]
   
   Problema con l'alisaing: le due slice si riferiscono allo stesso array, ma quando quella originale raddoppia, questa punterà a un nuovo array, mentre la subslice punterà ancora a quello vecchio
 

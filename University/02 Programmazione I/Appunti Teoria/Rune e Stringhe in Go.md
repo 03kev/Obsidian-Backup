@@ -57,9 +57,14 @@ func main() {
 		Print("Char di indice ", i, ": ", string(stringa[i]), "\n")	
 	} 
 	/* 
-	len(stringa) = 9 [€ 2byte, 5 e 0 1byte ciascuno (ASCII), 💶 4byte]
+	len(stringa) = 9 [€ 3byte, 5 e 0 1byte ciascuno (ASCII), 💶 4byte]
 	0:'â', 1:'', 2:'¬', 3:'5', 4:'0', 5:'ð', 6:' ', 7:' ', 8:'¶'
 	*/
+
+	Println()
+	for i, c := range stringa {
+		Print("Char di indice ", i, ": ", string(c), "\n")
+	}
 }
 ```
 - si nota che la lista non è scorsa correttamente: len(stringa) non restituisce la quantità di caratteri della stringa, in questo caso 4, ma il numero di byte che questa occupa, ossia 9: i caratteri non ASCII infatti necessitano di almeno due byte per essere codificati.

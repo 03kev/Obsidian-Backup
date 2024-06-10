@@ -32,7 +32,7 @@ func main() {
 	f := func(x int) int {
 		return x*4
 	}
-	Println(f(4))
+	Println(f(4), product(5, f))
 
 	Println(product(20, func(y int) int { //funzione anonima
 		return y*y 
