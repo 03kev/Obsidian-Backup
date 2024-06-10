@@ -4,18 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "91a231ee721a051c",
+        "id": "e05d8ae0b789c0fa",
         "type": "tabs",
         "children": [
           {
-            "id": "dcf6e11c5d1a49f4",
+            "id": "1f28606149dc3052",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f32e2640451dea8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md"
+              }
             }
           },
           {
@@ -172,17 +195,20 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "dcf6e11c5d1a49f4",
+  "active": "f32e2640451dea8a",
   "lastOpenFiles": [
-    "Untitled.md",
-    "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
-    "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
-    "01 Architettura II/Appunti Teoria/02 - Memories.md",
-    "01 Architettura II/Laboratorio/Laboratorio Assembly 03.md",
-    "01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
+    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "02 Programmazione I/Appunti Teoria/To remember for exam.md",
+    "02 Programmazione I/Appunti Teoria/To Do.md",
+    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
     "01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508101121.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508093308.png",
+    "01 Architettura II/Appunti Teoria/CPU a ciclo multiplo.md",
+    "01 Architettura II/Appunti Teoria/03 - Hamming Code.md",
+    "01 Architettura II/Appunti Teoria/02 - Memories.md",
+    "02 Programmazione I/Appunti Teoria/2024-01-10.md",
+    "02 Programmazione I/Appunti Teoria/2023-12-19.md",
+    "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
+    "02 Programmazione I/Appunti Teoria/2023-12-15.md",
     "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
     "02 Programmazione I/Appunti Teoria/2023-12-12.md",
     "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
@@ -190,29 +216,26 @@
     "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
     "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
     "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-19.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-15.md",
-    "02 Programmazione I/Appunti Teoria/2024-01-10.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-03.md",
+    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520111518.png",
+    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105835.png",
+    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105620.png",
+    "Untitled 1.md",
+    "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
+    "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+    "01 Architettura II/Laboratorio/Laboratorio Assembly 03.md",
+    "01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
+    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508101121.png",
+    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508093308.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429120024.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429112313.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429110329.png",
     "01 Architettura II/Laboratorio/attachments/Pasted image 20240428160922.png",
     "01 Architettura II/Laboratorio/attachments/Pasted image 20240427162144.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240427163805.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240427172814.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240428131920.png",
-    "01 Architettura II/Laboratorio/Used Instructions.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
-    "Recursivity.md",
-    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
     "config/js_scripts/prova.js.js",
-    "03 Linguaggi Formali e Automi/Automi a stati finiti.md",
-    "03 Linguaggi Formali e Automi/Lezione 3.md",
     "04 Logica Matematica/Appunti Teoria",
     "04 Logica Matematica",
-    "02 Programmazione I/Appunti Teoria/To Do.md",
-    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
-    "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
     "01 Architettura II/Appunti Teoria",
     "attachments",
     "01 Architettura II",
