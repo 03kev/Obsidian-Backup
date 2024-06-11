@@ -127,3 +127,34 @@ func main() {
 ```
 
 `{go}c`  variabile locale alla funzione. Assegnando il valore alla variabile decidiamo il valore restituito dalla funzione senza doverlo specificare nel return.
+
+***
+
+##### Domande orale Vigna
+
+- Operatori &, || e !
+- Varie forme di ciclo for in go
+	- For range
+	- 3 tipi di for range: stringhe, slice/array, mappe
+	- Ciclo for: come viene eseguito?
+- Break - interrompe ciclo; continua - interrompe l'esecuzione del corpo e passi all'istruzione successiva
+- Come è la rappresentazione interna delle stringhe in go?
+	-  Conversione di una slice di rune
+- Slice? Tutto a riguardo (appunti)
+	- Differenza tra array e slice
+	- Subslicing di una slice
+		- operatore di subslice e a cosa si può applicare - slice di byte, stringhe, vettori che danno una slice
+- Dichiarare una funzione dentro una funzione
+- Puntatori
+- Bit byte in int64 int int32
+- In una mappa la chiave deve essere sempre diversa, non può essere uguale, ma il valore invece può esserlo.
+- Switch ( == se non c'è niente prima delle graffe vale true)
+	- Switch x (x variabile o condizione)
+- Differenza tra passare una slice / vettore a una funione
+
+###### Esercizi
+- Fare struct e fare una funzione che restituisca l'età moltiplicata per due
+- Contare le parole di una stringa di rune usando comandi tipo unicode.IsLetter
+- Trovare elementi comuni di due slice e stamparli
+- Dichiarare una funzione che prende due argomenti da int a interi e restituisce una funzione da int e int
+- Verificare la distanza tra due elementi di una mappa

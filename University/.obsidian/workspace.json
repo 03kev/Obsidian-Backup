@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": false,
                 "source": false
               }
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "right": {
     "id": "09f2d08edbef226d",
@@ -182,6 +183,11 @@
   },
   "active": "d1888a736c4a93f1",
   "lastOpenFiles": [
+    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-03.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
+    "02 Programmazione I/Appunti Teoria/To remember for exam.md",
     "02 Programmazione I/Appunti Teoria/2024-01-10.md",
     "02 Programmazione I/Appunti Teoria/To Do.md",
     "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
@@ -194,11 +200,6 @@
     "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
     "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
     "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-03.md",
-    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
-    "02 Programmazione I/Appunti Teoria/To remember for exam.md",
     "01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
     "01 Architettura II/Appunti Teoria/CPU a ciclo multiplo.md",
     "01 Architettura II/Appunti Teoria/03 - Hamming Code.md",
