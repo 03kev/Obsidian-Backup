@@ -1,6 +1,7 @@
 /*- editor line width - default 700px -*/ 
 body {
-  --file-line-width: 800px;  
+  --file-line-width: 800px;
+  /* --background-primary: rgb(25, 25, 25); */
 }
 
 /* ----------------------------- LINKS ---------------------------- */

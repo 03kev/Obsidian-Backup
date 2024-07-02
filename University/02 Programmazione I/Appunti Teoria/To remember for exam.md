@@ -2,20 +2,41 @@
 ###### Zucchero sintattico
 Con "zucchero sintattico" si intendono i costrutti sintattici che non cambiano la struttura del programma ma soltanto la forma. L'assgnazione breve è un caso evidente di zucchero sintattico.
 
+***
+#### Declarations
+A declaration names a program entity and specifies some or all of its properties. There are four major kinds of declarations: var, const, type, and func.
+
+```go unwrap title:
+//package main
+//import . "fmt"
+
+const boilingF = 212.0
+
+func main() {
+	var f = boilingF
+	var c = (f - 32) * 5 / 9
+	
+	Printf("boiling point = %g°F or %g°C\n", f, c)
+}
+```
+
+The constant boiling is a package-level declaration (as is main), whereas the variables f and c are local to the function main. The name of each package-level entity is visible not only throughout the source file that contains its declaration, but throughout all the files of the pack-age. By contrast, local declarations are visible only within the function in which they are declared and perhaps only within a small part of it.
+
+###### Function declaration
+A function declaration has a name, a list of parameters (the variables whose values are provided by the function's callers), an optional list of results, and the function body, which contains the statements that define what the function does. The result list is omitted if the function does not return anything. Execution of the function begins with the first statement and continues until it encounters a return statement or reaches the end of a function that has no results. Control of the program and any results are then returned to the caller.
+
 #### Variables
 A var declaration creates a variable of a particular type, attaches a name to it, and sets its initial value. Each declaration has the general form `{go}var name type = expression`
 
 Either the type or the = expression part may be omitted, but not both. If the type is omitted,
 it is determined by the initializer expression. If the expression is omitted, the initial value is the zero value for the type, which is 0 for numbers, false for booleans, "" for strings, and nil for interfaces and reference types (slice, pointer, map, channel, function). The zero value of an aggregate type like an array or a struct has the zero value of all of its elements or fields.
 
-##### Declarations
-A declaration names a program entity and specifies some or all of its properties. There are four major kinds of declarations: var, const, type, and func.
-
 ##### Dichiarazione breve
 ```go unwrap title:
 t := 1  // var t int = 1  // NomeVariabile = [Espressione] // tipo sulla base dell'espressione
 x, y := 3, 4 // multiple assignments (var x, y int = 5, 9)
 ```
+
 Within a function, an alternate form called a short variable declaration may be used to declare and initialize local variables. It takes the form `{go}name := expression`, and the type of *name* is determined by the type of *expression*.
 
 Keep in mind that := is a declaration, whereas = is an assignment. A multi-variable declaration should not be confused with a tuple assignment, in which each variable on the left-hand side is assigned the corresponding value from the right-hand side:`{go}i, j = j, i // swap values of i and j`
