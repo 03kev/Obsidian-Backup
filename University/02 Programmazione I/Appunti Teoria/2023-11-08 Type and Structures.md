@@ -42,7 +42,7 @@ func main() {
 		civic int
 	}
 	Address.city = "Parma"; Address.street = "Verdi"; Address.civic = 8
-	//Address{street:"Verdi", civic:8} non va in quanto non è un tipo  
+	//Address{street:"Verdi", civic:8} non va in quanto non è un tipo
 	Println(Address) //output: solo i valori della struct
 	Printf("%+v\n", Address) //output: chiavi e valori della struct
 
@@ -74,7 +74,8 @@ func main() {
 	who := Person{age:12, name: "Filippo", height:1.71} //Le variabili vanno messe tramite chiave. Quelle non assegnate hanno il valore di default del tipo
 	residence := Address{"Parma", "Verdi", 8} //Le variabili vanno messe tutte ed in ordine
 	id := Identity{&who, residence, true}
-	Print(who, "\n", residence, "\n", id, "\n", *id.info, id.info)
+	id2 := Identity{&Person{age:12, name: "Filippo2", height:1.71}, residence, true}
+	Print(who, "\n", residence, "\n", id, "\n", *id2.info, *id.info, id.info)
 }
 ```
 
@@ -101,3 +102,8 @@ func main() {
 }
 ```
 
+***
+Metodi per le strutture
+https://gobyexample.it/metodi.html
+
+http://www.valeriofinazzo.it/wordpress/2020/08/tutorial-go-metodi-e-interfacce/

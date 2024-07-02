@@ -28,7 +28,7 @@ func main() {
 ```
 - Con &a[i] si ottiene l'indirizzo di memoria dell'elemento i-esimo nell'array 
 #### Slice
-Il modo in cui funzionano è molto specifico di Go. La slice è una sequenza di elementi di tipo omogenee, un array, ma di lunghezza varriabile.
+Il modo in cui funzionano è molto specifico di Go. La slice è una sequenza di elementi di tipo omogenee, un array, ma di lunghezza variabile.
 Le slice però, a differenza degli array, non sono dei blocchi di memoria ma si comportano come dei puntatori, in quanto non hanno una grandezza definita e potrebbero aver bisogno di essere salvate in parti di memoria diverse.
 
 La slice si dichiara come `{go}var x []type` , e al momento dell'inizializzazione ha valore `nil`, che viene stampato a terminale con `[]`. Con `{go}var x []type = []type{valori}` è possibile assegnare dei valori alla slice.
@@ -69,7 +69,7 @@ func main() {
 Gli array sono dei tipi di base rappresentati in memoria che si comportano come tutti gli altri tipi di dati e vengono trattate per valore.
 Le slice sono delle strutture che contengono 3 campi:
 - 1° campo: un puntatore che punta al primo elemento in un array da qualche parte salvato in memoria.
-- 2° campo: una lunghezza che definisce 
+- 2° campo: una lunghezza che definisce.
 - 3° capacità: il massimo numero di elementi che la slice può contenere senza cambiare array.
 
 La slice quindi non contiene veramente i valori, ma è un puntatore a questi valori che sono contenuti in un array.
