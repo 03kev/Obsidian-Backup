@@ -4,9 +4,10 @@ Con "zucchero sintattico" si intendono i costrutti sintattici che non cambiano l
 
 ***
 #### Declarations
-A declaration names a program entity and specifies some or all of its properties. There are four major kinds of declarations: var, const, type, and func.
+A declaration names a program entity and specifies some or all of its properties. 
+There are four major kinds of declarations: var, const, type, and func.
 
-```go unwrap title:
+```go unwrap title:"Declaration Example"
 //package main
 //import . "fmt"
 
@@ -23,15 +24,24 @@ func main() {
 The constant boiling is a package-level declaration (as is main), whereas the variables f and c are local to the function main. The name of each package-level entity is visible not only throughout the source file that contains its declaration, but throughout all the files of the pack-age. By contrast, local declarations are visible only within the function in which they are declared and perhaps only within a small part of it.
 
 ###### Function declaration
-A function declaration has a name, a list of parameters (the variables whose values are provided by the function's callers), an optional list of results, and the function body, which contains the statements that define what the function does. The result list is omitted if the function does not return anything. Execution of the function begins with the first statement and continues until it encounters a return statement or reaches the end of a function that has no results. Control of the program and any results are then returned to the caller.
+A function declaration has a name, a list of parameters (the variables whose values are provided by the function's callers), an optional list of results, and the function body, which contains the statements that define what the function does. The result list is omitted if the function does not return anything.
+
+Execution of the function begins with the first statement and continues until it encounters a return statement or reaches the end of a function that has no results. Control of the program and any results are then returned to the caller.
 
 #### Variables
 A var declaration creates a variable of a particular type, attaches a name to it, and sets its initial value. Each declaration has the general form `{go}var name type = expression`
 
-Either the type or the = expression part may be omitted, but not both. If the type is omitted,
-it is determined by the initializer expression. If the expression is omitted, the initial value is the zero value for the type, which is 0 for numbers, false for booleans, "" for strings, and nil for interfaces and reference types (slice, pointer, map, channel, function). The zero value of an aggregate type like an array or a struct has the zero value of all of its elements or fields.
+Either the type or the `{go}= expression` part may be omitted, but not both. 
+- If the type is omitted, it is determined by the initializer expression. 
+- If the expression is omitted, the initial value is the zero value for the type, which is: 
+	- `0` for numbers, `false` for booleans, `""` for strings
+	- `nil` for interfaces and reference types (slice, pointer, map, channel, function). 
+	  The zero value of an aggregate type like an array or a struct has the zero value of all of its elements or fields.
 
-##### Dichiarazione breve
+<span style="color:rgb(124, 124, 124)">This way a variable always holds a defined value of its type: there are no uninitialized variables</span>
+
+##### Short variable declaration (Dichiarazione breve)
+
 ```go unwrap title:
 t := 1  // var t int = 1  // NomeVariabile = [Espressione] // tipo sulla base dell'espressione
 x, y := 3, 4 // multiple assignments (var x, y int = 5, 9)
@@ -126,7 +136,7 @@ When the compiler encounters a reference to a name, it looks for a declaration, 
 ###### For scope
 Not all lexical blocks correspond to explicit brace-delimited sequences of statements; some are merely implied. 
 
-The for loop creates two lexical blocks: the explicit block for the loop body, and an implicit block that additionally encloses the variables declared by the initialization clause, such as i. The scope of a variable declared in the implicit block is the condition, post-statement (i++), and body of the for statement.
+The for loop creates two lexical blocks: the explicit block for the loop body, and an implicit block that additionally encloses the variables declared by the initialization clause , such as i. The scope of a variable declared in the implicit block is the condition, post-statement (i++), and body of the for statement.
 
 ###### If, switch scope
 Like for loops, if statements and switch statements also create implicit blocks in addition to their body blocks.

@@ -34,6 +34,7 @@ Sono delle variabili più complesse definite dall'utente che vengono usate per r
 >Sono comparabili alle classi della programmazione ad oggetti, con la differenze che però non supportano l'ereditarietà. 
 
 Per accedere ai valori delle chiavi della struttura: `{go}struct_name.key` 
+
 ```go unwrap title:"Dichiarazione di una variabile struttura" err:8
 func main() {
 	var Address struct {
