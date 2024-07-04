@@ -2,7 +2,9 @@
 ###### Zucchero sintattico
 Con "zucchero sintattico" si intendono i costrutti sintattici che non cambiano la struttura del programma ma soltanto la forma. L'assgnazione breve è un caso evidente di zucchero sintattico.
 
+
 ***
+
 #### Declarations
 A declaration names a program entity and specifies some or all of its properties. 
 There are four major kinds of declarations: var, const, type, and func.
@@ -40,6 +42,9 @@ Either the type or the `{go}= expression` part may be omitted, but not both.
 
 <span style="color:rgb(124, 124, 124)">This way a variable always holds a defined value of its type: there are no uninitialized variables</span>
 
+A variable is a piece of storage containing a value. When they are created by declarations, they are identified by a name. Some others are however identified only by expressions like `x[i]` or `x.f`.
+- All these expressions read the value of a variable <span style="color:rgb(124, 124, 124)">(except when they appear on the left side of an assignment, in which case a new value is assigned to the variable)</span>
+
 ##### Short variable declaration (Dichiarazione breve)
 
 ```go unwrap title:
@@ -59,9 +64,10 @@ L'assegnamento multiplo parallelo ha un indebolimento della regola della variabi
 
 <span style="color:rgb(124, 124, 124)">One subtle but important point: a short variable declaration does not necessarily declare all the variables on its left-hand side. If some of them were already declared in the same lexical block, then the short variable declaration acts like an assignment to those variables.</span>
 
-##### Assegnamento
+##### Assignment
 The value held by a variable is updated by an assignment statement, which in its simplest form
 has a variable on the left of the = sign and an expression on the right.
+
 ```go unwrap title:
 x = 1                             // named variable
 *p = true                         // indirect variable
@@ -74,8 +80,24 @@ Assignments statements are an explicit form of assignment, but there are many pl
 - a return statement implicitly assigns the return operands to the corresponding result variables
 - a literal expression for a composite type such as `{go}medals := []string{"gold", "silver"}` implitcitly assigns each element as if it had been written like this: `{go}medals[0] = "gold"; medals[1] = "silver"` 
 
-##### Assegnamento Tupla
+##### Tuple assignment (Assegnamento tupla)
 Another form of assignment, known as tuple assignment, allows several variables to be assigned at once. All of the right-hand side expressions are evaluated before any of the variables are updated, making this form most useful when some of the variables appear on both sides of the assignment, as happens, for example, when swapping the values of two variables: `x, y = y, x`
+
+
+***
+
+##### Pointers
+A pointer value is the address of a variable. A pointer is thus the location at which a value is stored. Not every value has an address, but every variable does. 
+With a pointer, we can read or update the value of a variable indirectly, without using or even knowing the name of the variable, if indeed it has a name.
+
+**\[...**
+If a variable is declared `var x int`, the expression `&x` (address of x) yields a pointer to an integer variable, that is a value of type `*int`. 
+
+The expression `*p` yields tha value of the variable pointed by `p`. But since `*p` denotes a variable, it may also appea on the left side of an assignment, in which case the assignment updates the value of the variable pointed.
+**...]**
+###### New() 
+Another way to create a variable is to use the built-in function new. The expression new(T) creates an unnamed variable of type T, initializes it to the zero value of T, and returns its address, which is a value of type \*T.
+
 
 ***
 
@@ -84,7 +106,9 @@ A type declaration defines a new named type that has the same underlying type as
 
 <span style="color:rgb(124, 124, 124)">Type declarations most often appear at package level, where the named type is visible throughout the package, and if the name is exported (it starts with an upper-case letter), it's accessible from other packages as well.</span>
 
+
 ***
+
 
 #### Scope
 A declaration associates a name with a program entity, such as a function or a variable. The scope of a declaration is the part of the source code where a use of the declared name refers to that declaration.
@@ -162,11 +186,6 @@ The second if statement is nested within the first, so variables declared within
 
 
 ***
-
-##### Puntatori
-A pointer value is the address of a variable. A pointer is thus the location at which a value is stored. Not every value has an address, but every variable does. With a pointer, we can read or update the value of a variable indirectly, without using or even knowing the name of the variable, if indeed it has a name.
-
-Another way to create a variable is to use the built-in function new. The expression new(T) creates an unnamed variable of type T, initializes it to the zero value of T, and returns its address, which is a value of type \*T.
 
 
 ###### Variabili float
