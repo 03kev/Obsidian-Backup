@@ -64,7 +64,7 @@ L'assegnamento multiplo parallelo ha un indebolimento della regola della variabi
 
 <span style="color:rgb(124, 124, 124)">One subtle but important point: a short variable declaration does not necessarily declare all the variables on its left-hand side. If some of them were already declared in the same lexical block, then the short variable declaration acts like an assignment to those variables.</span>
 
-##### Assignment
+#### Assignment
 The value held by a variable is updated by an assignment statement, which in its simplest form
 has a variable on the left of the = sign and an expression on the right.
 
@@ -75,6 +75,7 @@ person.name = "bob"               // struct field
 count[x] = count[x] * scale       // array or slice or map element
 ```
 
+###### Assignability
 Assignments statements are an explicit form of assignment, but there are many places in a program where an assignment occurs implicitly: 
 - a function call implicitly assigns the argument values to the corresponding parameter variables
 - a return statement implicitly assigns the return operands to the corresponding result variables
@@ -86,7 +87,7 @@ Another form of assignment, known as tuple assignment, allows several variables 
 
 ***
 
-##### Pointers
+#### Pointers
 A pointer value is the address of a variable. A pointer is thus the location at which a value is stored. Not every value has an address, but every variable does. 
 With a pointer, we can read or update the value of a variable indirectly, without using or even knowing the name of the variable, if indeed it has a name.
 
@@ -95,7 +96,21 @@ If a variable is declared `var x int`, the expression `&x` (address of x) yields
 
 The expression `*p` yields tha value of the variable pointed by `p`. But since `*p` denotes a variable, it may also appea on the left side of an assignment, in which case the assignment updates the value of the variable pointed.
 **...]**
-###### New() 
+
+- Each component of a variable of aggregate type, a field of a struct or an element of an array, is also a variable and thus has an address too.
+- Variables are addressable values. Expressions that denote variables are the only ones to which the address operator `&` may be applied.
+- Two pointers are equal if and only if they both point to the same variable or if they are both `nil`
+
+The zero value for a pointer of any type is `nil`
+- `{go}p != nil` is true if `p` points to a variable
+
+###### Aliasing
+Each time we take the address of a variable or copy a pointer, we create new aliases or ways to identify the same variable.
+Pointer aliasing is useful because it allows us to access a variable without using its name.
+
+[!] It's not just pointers that create aliases; aliasing also occurs when we copy values of other reference types like slices, maps, and channels, and even structs, arrays, and interfaces that contain these types.
+
+###### New() function
 Another way to create a variable is to use the built-in function new. The expression new(T) creates an unnamed variable of type T, initializes it to the zero value of T, and returns its address, which is a value of type \*T.
 
 
@@ -106,9 +121,15 @@ A type declaration defines a new named type that has the same underlying type as
 
 <span style="color:rgb(124, 124, 124)">Type declarations most often appear at package level, where the named type is visible throughout the package, and if the name is exported (it starts with an upper-case letter), it's accessible from other packages as well.</span>
 
+For every type T, there is a corresponding conversion operation T(x) that converts the value x to type T. A conversion from one type to another is allowed if both have the same underlying type, or if both are unnamed pointer types that point to variables of the same underlying type; these conversions change the type but not the representation of the value.
+
+The underlying type of a named type determines its structure and representation, and also the set of intrinsic operations it supports, which are the same as if the underlying type had been used directly.
+
 
 ***
 
+##### Lifetime of variables
+The escaping concept [...] page 55 of the book -> how does the compiler decide if it's better to allocate in the heap or in the stack.
 
 #### Scope
 A declaration associates a name with a program entity, such as a function or a variable. The scope of a declaration is the part of the source code where a use of the declared name refers to that declaration.
@@ -298,6 +319,7 @@ func main() {
 
 
 - defer, panic e recover per gestire i segmentation fault
+- Strutture e metodi
 ###### Esercizi
 - Fare struct e fare una funzione che restituisca l'età moltiplicata per due
 - Contare le parole di una stringa di rune usando comandi tipo unicode.IsLetter

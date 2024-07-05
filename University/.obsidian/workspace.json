@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md",
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "673d2a97b5aafa8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -83,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5,
-    "collapsed": true
+    "width": 268.5
   },
   "right": {
     "id": "09f2d08edbef226d",
@@ -100,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md",
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md",
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/To remember for exam.md"
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md"
               }
             }
           },
@@ -196,8 +208,12 @@
   },
   "active": "3501c7325b800aaa",
   "lastOpenFiles": [
+    "02 Programmazione I/Appunti Teoria/2023-11-03.md",
+    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
+    "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
     "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
-    "02 Programmazione I/Appunti Teoria/To remember for exam.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png",
     "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
     "02 Programmazione I/Appunti Teoria/2023-12-19.md",
     "02 Programmazione I/Appunti Teoria/2023-12-15.md",
@@ -210,9 +226,6 @@
     "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
     "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
     "02 Programmazione I/Appunti Teoria/To Do.md",
-    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-03.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
     "01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
     "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
     "01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
@@ -224,14 +237,12 @@
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105620.png",
     "Untitled 1.md",
     "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
-    "01 Architettura II/Laboratorio/Laboratorio Assembly 03.md",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508101121.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508093308.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429120024.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429112313.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429110329.png",
     "01 Architettura II/Laboratorio/attachments/Pasted image 20240428160922.png",
-    "01 Architettura II/Laboratorio/attachments/Pasted image 20240427162144.png",
     "config/js_scripts/prova.js.js",
     "04 Logica Matematica/Appunti Teoria",
     "04 Logica Matematica",
