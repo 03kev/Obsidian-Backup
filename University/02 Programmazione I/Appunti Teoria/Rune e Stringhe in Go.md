@@ -39,6 +39,11 @@ Le rune di go contengono i code point di Unicode. Per immagazzinare i caratteri 
 
 La maggior parte dei siti web e dei linuguaggi di programmazione utilizza UTF-8, in quanto occupa meno spazio di memoria.
 
+**Funzionamento**
+Se il primo byte inizia con 0, significa cbe il carattere è rappresentato in 7 bit ed è ASCII.
+Se invece il carattere non è ASCII, e quindi occupa più di un byte:
+- 
+
 [ ... manca una parte ... ]
 
 ##### [Stringhe](https://go.dev/blog/strings)

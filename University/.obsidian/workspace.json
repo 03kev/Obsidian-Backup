@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3501c7325b800aaa",
+            "id": "673d2a97b5aafa8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
+                "file": "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "673d2a97b5aafa8f",
+            "id": "650f3a43efab4754",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -46,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "right": {
     "id": "09f2d08edbef226d",
@@ -206,13 +208,14 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "3501c7325b800aaa",
+  "active": "650f3a43efab4754",
   "lastOpenFiles": [
+    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
+    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
     "02 Programmazione I/Appunti Teoria/2023-10-31.md",
-    "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
     "02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png",
     "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
     "02 Programmazione I/Appunti Teoria/2023-12-19.md",
@@ -224,7 +227,6 @@
     "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
     "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
     "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
-    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
     "02 Programmazione I/Appunti Teoria/To Do.md",
     "01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
     "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
