@@ -90,9 +90,14 @@ L'assegnamento multiplo parallelo ha un indebolimento della regola della variabi
 The escaping concept [...] page 55 of the book -> how does the compiler decide if it's better to allocate in the heap or in the stack.
 Not relevant for the exam
 
+##### 2.3   Scope of variables
+A variable (constant, type, function) is only known in a certain range of the program, called the scope.
+- Variables declared outside of any function have global (or package) scope: they are visible and available in all source files of the package.
+- Variables declared in a function have local scope: they are only known in that function, the same goes for parameters and return-variables.
+
 #### 3     Assignment
 The value held by a variable is updated by an assignment statement, which in its simplest form
-has a variable on the left of the = sign and an expression on the right.
+has a variable on the left of the = sign and an expression on the right: `{go}variable = expression` 
 
 ```go unwrap title:
 x = 1                             // named variable
@@ -252,8 +257,6 @@ The second if statement is nested within the first, so variables declared within
 - Similar rules apply to each case of a switch statement: there is a block for the condition and a block for each case body. 
 
 
-
-
 ***
 
 Types can be:
@@ -263,7 +266,7 @@ Types can be:
 
 ### Basic Data Types
 
-#### 3.1   Integers
+#### 1     Integers
 Go provides both signed and unsigned integer arithmetic. 
 - There are four distinct sizes of signed integers: 8, 16, 32, and 64 bits represented by the types ints, int16, int32, and int64
 - And corresponding unsigned versions uint8, uint16, uint32, and uint64
@@ -274,7 +277,7 @@ There are also two types called just int and uint that are the natural or most e
 
 Signed numbers are represented in 2's complement form, in which the range of values of an $n$-bit number is from $-2^{n-1}$ to $2^{n-1}$ 
 Unsigned integers use the full range of bits for non negative values and thus have the range that goes from $0$ to $255$. 
-#### 3.2   Floats
+#### 2     Floats
 Go provides two sizes of floating-point numbers, float32 and float64. Their arithmetic properties are governed by the IEEE 754 standard implemented by all modern CPUs.
 - float32 provides approximately 6 decimal digits of precision
 - float64 provides about 15 digits
@@ -286,16 +289,50 @@ In go non puoi dividere un float per un intero. Si risolve con`{go} n := x.0` .
 - A meno che non si faccia tra una costante e il float, in questo caso non c'è interferenza di tipo. Es: `2 * float`  funziona. 
 - `n := 2; n * float` non funziona. Il go nel primo caso intende in maniera autonoma il 2 come 2.0 in ordine da portare a termine l'operazione.
 
-#### 3.3   Booleans
+#### 3     Booleans
 A value of type bool, or boolean, has only two possible values, true and false. 
 The conditions in if and for statements are booleans, and comparison operators like == and ‹ produce a boolean result. The unary operator ! is logical negation, so !true is false.
 
+##### 3.1   Algebra di boole
+Con delle operazioni logiche che per i booleani sono diverse da quelle dell'algebra normale. Da questa derivano gli operatori logici: || or, && and, ! not
+- || e && sono binari (prendono 2 argomenti: EXPR || EXPR)
+- ! è unario (prende un argomento: !EXPR)
+
+Funzionamento:
+- && restituisce true se entrambe le condizioni, e quindi entrambi i booleani, sono veri: T && T = T.
+- || restituisce false se almeno una delle condizioni (e quindi almeno uno dei due bool) è vera. E' l'oppure inclusivo
+- ! prende un'espressione e lo converte nel valore booleano opposto. !(a\==b) è uguale ad a!=b
+
+##### 3.2    Short-circuit behaviour
 Boolean values can be combined with the && (AND) and | | (OR) operators, which have short-circuit behavior: if the answer is already determined by the value of the left operand, the right operand is not evaluated.
 - This makes it safe to write expressions like this: `{go}s != "" && s[0] == 'x'` where `s[0]` would panic if applied to an empty string.
 
 #### 3.4   Strings
+Strings are a sequence of UTF-8 characters (the 1 byte ASCII-code is used when possible, a 2-4 byte UTF-8 code when necessary -> ASCII-characters are still stored using only 1 byte). 
+- A Go string is thus a sequence of variable-width characters (each 1 to 4 bytes), contrary to strings in other languages as C++, Java or Python that are fixed-width. 
+- The advantages are that Go strings and text files occupy less memory/disk space, and since UTF-8 is the standard, Go doesn't need to encode and decode strings as other languages have to do.
 
+Strings are value types and immutable: once created you cannot modify the contents of the string; formulated in another way: strings are immutable arrays of bytes.
 
+<span style="color:rgb(124, 124, 124)">[ Notes ]</span>
+
+***
+
+### Structured types
+
+#### 1     Arrays
+
+#### 2     Slices
+##### 2.1   Append
+##### 2.2   Subslicing
+
+#### 3     Maps
+
+#### 4     Structs
+
+***
+
+### Functions
 ###### Istruzione If
 Istruzione di selezione: ci permette sulla base di una condizione di eseguire una parte di codice o un'altra
 != , \==, >, <, >=, <= operandi di confronto
@@ -312,20 +349,6 @@ L'if è concatenabile. In un if a catena si esegue al più un singolo corpo (se 
 
 COND è una condizione che restituisce un tipo booleano. L'if non accetta quindi una condizione, ma ciò che questa restituisce, ossia una variabile booleana, `{go}var bool.` 
 Ha solo due valori: `true`e `false`. Gli operatori di confronto prendono due espressioni, le comparano e restituiscono un'espressione booleana a seconda se la condizione sia vera o falsa.
-
-###### Algebra di Boole
-Con delle operazioni logiche che per i booleani sono diverse da quelle dell'algebra normale. Da questa derivano gli operatori logici: || or, && and, ! not
-- || e && sono binari (prendono 2 argomenti: EXPR || EXPR)
-- ! è unario (prende un argomento: !EXPR)
-
-Funzionamento:
-- && restituisce true se entrambe le condizioni, e quindi entrambi i booleani, sono veri: T && T = T.
-- || restituisce false se almeno una delle condizioni (e quindi almeno uno dei due bool) è vera. E' l'oppure inclusivo
-- ! prende un'espressione e lo converte nel valore booleano opposto. !(a\==b) è uguale ad a!=b
-
-###### Variabili locali
-Le variabili valgono solo nel blocco in cui sono definite (per esempio in un blocco if). 
-`{go}if a := b*b; b > 0 { ... }`  $a$ è dichiarata nell'if ed è definita solo nel suo blocco.
 
 ###### Cicli
 Il for è l'unica istruzione per eseguire un ciclo in go

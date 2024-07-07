@@ -75,4 +75,8 @@ func main() {
 - si nota che la lista non è scorsa correttamente: len(stringa) non restituisce la quantità di caratteri della stringa, in questo caso 4, ma il numero di byte che questa occupa, ossia 9: i caratteri non ASCII infatti necessitano di almeno due byte per essere codificati.
   Di conseguenza quando si prova a stampare l'i-esimo carattere della stringa, i caratteri ASCII vengono stampati correttamente (anche se con indice sbagliato), mentre gli altri sono spezzettati: per esempio, al posto di un carattere che occupa tre byte, vengono stampati i tre caratteri codificati ciascuno da uno dei tre byte.
 
-[ sottostringhe ]
+###### Substrings
+The substring operation s[i:j] yields a new string consisting of the bytes of the original string starting at index i and continuing up to, but not including, the byte at index j. The result contains j-i bytes.
+
+`fmt.PrintIn(s[0:5]) // "hello"` 
+Again, a panic results if either index is out of bounds or if j is less than i.

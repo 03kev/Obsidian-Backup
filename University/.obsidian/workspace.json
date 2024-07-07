@@ -4,37 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "63eb6721db45faa7",
+        "id": "3c199389cb9f20d3",
         "type": "tabs",
         "children": [
           {
-            "id": "650f3a43efab4754",
+            "id": "b25891393bcc441d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b8881f6c36b92663",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md"
-              }
+              "state": {}
             }
           },
           {
@@ -195,26 +172,26 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "b8881f6c36b92663",
+  "active": "b25891393bcc441d",
   "lastOpenFiles": [
-    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
+    "02 Programmazione I/Appunti Teoria/2024-01-10.md",
+    "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
+    "02 Programmazione I/Appunti Teoria/2023-12-19.md",
     "02 Programmazione I/Appunti Teoria/2023-12-15.md",
     "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
+    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
     "02 Programmazione I/Appunti Teoria/2023-12-12.md",
     "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
     "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
     "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
     "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
     "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
     "02 Programmazione I/Appunti Teoria/2023-10-31.md",
-    "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
     "02 Programmazione I/Appunti Teoria/attachments/image.png",
     "02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png",
-    "02 Programmazione I/Appunti Teoria/2023-12-19.md",
-    "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
-    "02 Programmazione I/Appunti Teoria/2024-01-10.md",
     "02 Programmazione I/Appunti Teoria/To Do.md",
     "01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
     "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
