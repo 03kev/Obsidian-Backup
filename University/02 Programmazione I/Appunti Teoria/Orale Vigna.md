@@ -4,8 +4,15 @@ Con "zucchero sintattico" si intendono i costrutti sintattici che non cambiano l
 
 
 ***
+### Program Structure
 
-#### Declarations
+Go is an imperative language: the program has a state that is manipulated during its execution. The state is represented by the variables.
+
+A main function as starting is required (usually the first func), otherwise a build-error will occur. 
+`func main` must have no arguments and no return values results.
+When the program executes, after initializations the first function called (the entry-point of the program) will be main.main(). The program exits, immediately and successfully, when main.main returns.
+
+#### 1     Declarations
 A declaration names a program entity and specifies some or all of its properties. 
 There are four major kinds of declarations: var, const, type, and func.
 
@@ -21,16 +28,29 @@ func main() {
 	
 	Printf("boiling point = %g°F or %g°C\n", f, c)
 }
+
+/* The constant boiling is a package-level declaration (as is main), whereas the 
+variables f and c are local to the function main. The name of each package-level 
+entity is visible not only throughout the source file that contains its 
+declaration, but throughout all the files of the pack-age. By contrast, local 
+declarations are visible only within the function in which they are declared and 
+perhaps only within a small part of it */
 ```
 
-The constant boiling is a package-level declaration (as is main), whereas the variables f and c are local to the function main. The name of each package-level entity is visible not only throughout the source file that contains its declaration, but throughout all the files of the pack-age. By contrast, local declarations are visible only within the function in which they are declared and perhaps only within a small part of it.
+##### 1.1   Function declaration
 
-###### Function declaration
-A function declaration has a name, a list of parameters (the variables whose values are provided by the function's callers), an optional list of results, and the function body, which contains the statements that define what the function does. The result list is omitted if the function does not return anything.
+`{go}func function_name(parameter_list) return_value_list { ... }`
+
+A function declaration has:
+- a name
+- an optional list of parameters (the variables whose values are provided by the function's callers). They are separated by a comma, and after the name of each parameter must come its type.
+- an optional list of results, and the function body, which contains the statements that define what the function does. The result list is omitted if the function does not return anything
+
+The body of the functions is enclosed between braces `{ }`
 
 Execution of the function begins with the first statement and continues until it encounters a return statement or reaches the end of a function that has no results. Control of the program and any results are then returned to the caller.
 
-#### Variables
+#### 2     Variables
 A var declaration creates a variable of a particular type, attaches a name to it, and sets its initial value. Each declaration has the general form `{go}var name type = expression`
 
 Either the type or the `{go}= expression` part may be omitted, but not both. 
@@ -45,26 +65,32 @@ Either the type or the `{go}= expression` part may be omitted, but not both.
 A variable is a piece of storage containing a value. When they are created by declarations, they are identified by a name. Some others are however identified only by expressions like `x[i]` or `x.f`.
 - All these expressions read the value of a variable <span style="color:rgb(124, 124, 124)">(except when they appear on the left side of an assignment, in which case a new value is assigned to the variable)</span>
 
-##### Short variable declaration (Dichiarazione breve)
+##### 2.1   Short variable declaration (Dichiarazione breve)
 
 ```go unwrap title:
-t := 1  // var t int = 1  // NomeVariabile = [Espressione] // tipo sulla base dell'espressione
+t := 1  // var t int = 1  // variable_name = [expression] // the type is based on  the expression
 x, y := 3, 4 // multiple assignments (var x, y int = 5, 9)
 ```
 
 Within a function, an alternate form called a short variable declaration may be used to declare and initialize local variables. It takes the form `{go}name := expression`, and the type of *name* is determined by the type of *expression*.
 
-Keep in mind that := is a declaration, whereas = is an assignment. A multi-variable declaration should not be confused with a tuple assignment, in which each variable on the left-hand side is assigned the corresponding value from the right-hand side:`{go}i, j = j, i // swap values of i and j`
-###### Indebolimento dell'assegnamento multiplo parallelo
+It's important to remeber that := is a declaration, whereas = is an assignment. A multi-variable declaration should not be confused with a tuple assignment, in which each variable on the left-hand side is assigned the corresponding value from the right-hand side:
+`{go}i, j = j, i // swap values of i and j`
+
+###### 2.1.1 Indebolimento dell'assegnamento multiplo parallelo
 L'assegnamento multiplo parallelo ha un indebolimento della regola della variabile nuova:
 `{go}var x int; x:= 1`  non compila, x è già dichiarato.
 
 `{go}var x int; x, y := 5, 6`  compila, perchè il Go assegna un valore alla variabile `{go}x`  già dichiarata, e invece dichiara `{go}y` . Per fare però in modo che assegni un valore a una variabile già dichiarata, nell'assegnamento multiplo deve esserci almeno una nuova variabile a sinistra da dichiarare. Esempio:
 `{go}var x, y int; x, y := 5, 6`  non compila.
 
-<span style="color:rgb(124, 124, 124)">One subtle but important point: a short variable declaration does not necessarily declare all the variables on its left-hand side. If some of them were already declared in the same lexical block, then the short variable declaration acts like an assignment to those variables.</span>
+<span style="color:rgb(124, 124, 124)">From the book: "One subtle but important point: a short variable declaration does not necessarily declare all the variables on its left-hand side. If some of them were already declared in the same lexical block, then the short variable declaration acts like an assignment to those variables."</span>
 
-#### Assignment
+##### 2.2   Lifetime of variables
+The escaping concept [...] page 55 of the book -> how does the compiler decide if it's better to allocate in the heap or in the stack.
+Not relevant for the exam
+
+#### 3     Assignment
 The value held by a variable is updated by an assignment statement, which in its simplest form
 has a variable on the left of the = sign and an expression on the right.
 
@@ -75,27 +101,23 @@ person.name = "bob"               // struct field
 count[x] = count[x] * scale       // array or slice or map element
 ```
 
-###### Assignability
+##### 3.1   Assignability
 Assignments statements are an explicit form of assignment, but there are many places in a program where an assignment occurs implicitly: 
 - a function call implicitly assigns the argument values to the corresponding parameter variables
 - a return statement implicitly assigns the return operands to the corresponding result variables
 - a literal expression for a composite type such as `{go}medals := []string{"gold", "silver"}` implitcitly assigns each element as if it had been written like this: `{go}medals[0] = "gold"; medals[1] = "silver"` 
 
-##### Tuple assignment (Assegnamento tupla)
+##### 3.2   Tuple assignment (Assegnamento tupla)
 Another form of assignment, known as tuple assignment, allows several variables to be assigned at once. All of the right-hand side expressions are evaluated before any of the variables are updated, making this form most useful when some of the variables appear on both sides of the assignment, as happens, for example, when swapping the values of two variables: `x, y = y, x`
 
-
 ***
-
-#### Pointers
+#### 4     Pointers
 A pointer value is the address of a variable. A pointer is thus the location at which a value is stored. Not every value has an address, but every variable does. 
 With a pointer, we can read or update the value of a variable indirectly, without using or even knowing the name of the variable, if indeed it has a name.
 
-**\[...**
-If a variable is declared `var x int`, the expression `&x` (address of x) yields a pointer to an integer variable, that is a value of type `*int`. 
+<span style="color:rgb(124, 124, 124)">If a variable is declared</span> `var x int`<span style="color:rgb(124, 124, 124)">, the expression</span> `&x` <span style="color:rgb(124, 124, 124)">(address of x) yields a pointer to an integer variable, that is a value of type</span> `*int`<span style="color:rgb(124, 124, 124)">. </span>
 
-The expression `*p` yields tha value of the variable pointed by `p`. But since `*p` denotes a variable, it may also appea on the left side of an assignment, in which case the assignment updates the value of the variable pointed.
-**...]**
+<span style="color:rgb(124, 124, 124)">The expression </span>`*p` <span style="color:rgb(124, 124, 124)">yields tha value of the variable pointed by</span> `p`<span style="color:rgb(124, 124, 124)">. But since</span> `*p` <span style="color:rgb(124, 124, 124)">denotes a variable, it may also appea on the left side of an assignment, in which case the assignment updates the value of the variable pointed.</span>
 
 - Each component of a variable of aggregate type, a field of a struct or an element of an array, is also a variable and thus has an address too.
 - Variables are addressable values. Expressions that denote variables are the only ones to which the address operator `&` may be applied.
@@ -104,19 +126,18 @@ The expression `*p` yields tha value of the variable pointed by `p`. But since `
 The zero value for a pointer of any type is `nil`
 - `{go}p != nil` is true if `p` points to a variable
 
-###### Aliasing
+<span style="color:rgb(124, 124, 124)">[ My notes ]</span>
+##### 4.1   Aliasing
 Each time we take the address of a variable or copy a pointer, we create new aliases or ways to identify the same variable.
 Pointer aliasing is useful because it allows us to access a variable without using its name.
 
 [!] It's not just pointers that create aliases; aliasing also occurs when we copy values of other reference types like slices, maps, and channels, and even structs, arrays, and interfaces that contain these types.
 
-###### New() function
+##### 4.2   New() function
 Another way to create a variable is to use the built-in function new. The expression new(T) creates an unnamed variable of type T, initializes it to the zero value of T, and returns its address, which is a value of type \*T.
 
-
 ***
-
-#### Type declaration
+#### 5     Type declaration
 A type declaration defines a new named type that has the same underlying type as an existing type. The named type provides a way to separate different and perhaps incompatible uses of the underlying type so that they can't be mixed unintentionally: `{go}type name underlying_type`
 
 <span style="color:rgb(124, 124, 124)">Type declarations most often appear at package level, where the named type is visible throughout the package, and if the name is exported (it starts with an upper-case letter), it's accessible from other packages as well.</span>
@@ -125,27 +146,52 @@ For every type T, there is a corresponding conversion operation T(x) that conver
 
 The underlying type of a named type determines its structure and representation, and also the set of intrinsic operations it supports, which are the same as if the underlying type had been used directly.
 
+```go unwrap title:"Utilizzo dei Type Definition per dichiarare unità di temperatura diverse"
+type Celsius float64
+type Fahrenheit float64
+	
+func CtoF(c Celsius) Fahrenheit {
+	return Fahrenheit(float64(c) * 9/5 + 32)
+}
+	
+func main() {
+	c := Celsius(32.5) //var c Celsius = 32.5
+	f := Fahrenheit(CtoF(c)) //var f Fahrenheit = CtoF(c) = 90.5
+	Println(c, f)
+}
+```
+
+##### 5.1   Type alias
+**Type Alias** (alias di tipo): `{go}type intero = int`. Serve a definire dei type alias: sono dei nomi per richiamare i tipi diversamente. I type alias quindi denotano lo stesso tipo e sono solo modi diversi per riferirci ad esso.
+- La `rune` e il `byte` sono rispettivamente il type alias dell'`int32` e dell'`int8`: si riferiscono quindi allo stesso tipo ma con un nome diverso. È zucchero sintattico.
+
+```go unwrap title:"Type Alias"
+type intero = int //creo un type alias intero di int (stessa cosa)
+type rune = int32 //rune è di base un type alias di int32
+type byte = int8 //byte è un type alias di int8
+	
+func main() {
+	var x intero = 5 //x è effettivamente un intero 
+	Println(x)
+}
+```
 
 ***
-
-##### Lifetime of variables
-The escaping concept [...] page 55 of the book -> how does the compiler decide if it's better to allocate in the heap or in the stack.
-
-#### Scope
+#### 6     Scope
 A declaration associates a name with a program entity, such as a function or a variable. The scope of a declaration is the part of the source code where a use of the declared name refers to that declaration.
 
 Scope and lifetime are not the same thing: 
 - the scope of a declaration is a region of the program text: it's a compile time property
 - the lifetime of a variable is the range of time during execution when the variable can be referred to by other parts of the program: it's a run time property
 
-###### Syntactic block
+##### 6.1   Syntactic block
 A syntactic block is a sequence of statements enclosed in braces like those that surround the body of a function or loop. A name declared inside a syntactic block is not visible outside that block. The block encloses its declarations and determines their scope. 
 - We can generalize this notion of blocks to include other groupings of declarations that are not explicitly surrounded by braces in the source code; we'll call them all lexical blocks. There is a lexical block for each for, if and switch statement, for each case in a switch statement, etc...
 
 Declarations outside any function, that is at package level, can be referred to from any file in the same package.
 - <span style="color:rgb(124, 124, 124)">Imported packages, such as fmt in the tempconv example, are declared at the file level, so they can be referred to from the same file, but not from another file in the same package without another import.</span>
 
-###### Shadowing
+###### 6.1.1 Shadowing
 Dichiarare in un contesto lessicale più piccolo (in un sotto-blocco) una variabile che esiste in un contesto lessicale più ampio.
 
 ```go unwrap title:
@@ -178,12 +224,12 @@ A program may contain multiple declarations of the same name so long as each dec
 
 When the compiler encounters a reference to a name, it looks for a declaration, starting with the innermost enclosing lexical block and working up to the universe block. If the compiler finds no declaration, it reports an "undeclared name" error. If a name is declared in both an outer block and an inner block, the inner declaration will be found first. In that case, the inner declaration is said to shadow or hide the outer one, making it inaccessible.
 
-###### For scope
+##### 6.2   For scope
 Not all lexical blocks correspond to explicit brace-delimited sequences of statements; some are merely implied. 
 
 The for loop creates two lexical blocks: the explicit block for the loop body, and an implicit block that additionally encloses the variables declared by the initialization clause , such as i. The scope of a variable declared in the implicit block is the condition, post-statement (i++), and body of the for statement.
 
-###### If, switch scope
+##### 6.3   If, switch scope
 Like for loops, if statements and switch statements also create implicit blocks in addition to their body blocks.
 
 ```go unwrap err:12 title:
@@ -206,14 +252,49 @@ The second if statement is nested within the first, so variables declared within
 - Similar rules apply to each case of a switch statement: there is a block for the condition and a block for each case body. 
 
 
+
+
 ***
 
+Types can be:
+- primitive like int, float, bool, string
+- structured like struct, array, slice, map, channel
+- interfaces which only describe the behavior of a type
 
-###### Variabili float
-Variabile float64 -> deriva da floating point. Contiene valori frazionali.
+### Basic Data Types
+
+#### 3.1   Integers
+Go provides both signed and unsigned integer arithmetic. 
+- There are four distinct sizes of signed integers: 8, 16, 32, and 64 bits represented by the types ints, int16, int32, and int64
+- And corresponding unsigned versions uint8, uint16, uint32, and uint64
+
+There are also two types called just int and uint that are the natural or most efficient size for signed and unsigned integers on a particular platform.
+
+<span style="color:rgb(124, 124, 124)">The type rune is a type alias for int32 and conventionally indicates that a value is a Unicode code point.</span>
+
+Signed numbers are represented in 2's complement form, in which the range of values of an $n$-bit number is from $-2^{n-1}$ to $2^{n-1}$ 
+Unsigned integers use the full range of bits for non negative values and thus have the range that goes from $0$ to $255$. 
+#### 3.2   Floats
+Go provides two sizes of floating-point numbers, float32 and float64. Their arithmetic properties are governed by the IEEE 754 standard implemented by all modern CPUs.
+- float32 provides approximately 6 decimal digits of precision
+- float64 provides about 15 digits
+
+Digits may be omitted before the decimal point (.104) of after it (1.)
+
+
 In go non puoi dividere un float per un intero. Si risolve con`{go} n := x.0` . 
 - A meno che non si faccia tra una costante e il float, in questo caso non c'è interferenza di tipo. Es: `2 * float`  funziona. 
 - `n := 2; n * float` non funziona. Il go nel primo caso intende in maniera autonoma il 2 come 2.0 in ordine da portare a termine l'operazione.
+
+#### 3.3   Booleans
+A value of type bool, or boolean, has only two possible values, true and false. 
+The conditions in if and for statements are booleans, and comparison operators like == and ‹ produce a boolean result. The unary operator ! is logical negation, so !true is false.
+
+Boolean values can be combined with the && (AND) and | | (OR) operators, which have short-circuit behavior: if the answer is already determined by the value of the left operand, the right operand is not evaluated.
+- This makes it safe to write expressions like this: `{go}s != "" && s[0] == 'x'` where `s[0]` would panic if applied to an empty string.
+
+#### 3.4   Strings
+
 
 ###### Istruzione If
 Istruzione di selezione: ci permette sulla base di una condizione di eseguire una parte di codice o un'altra
@@ -293,7 +374,11 @@ func main() {
 
 `{go}c`  variabile locale alla funzione. Assegnando il valore alla variabile decidiamo il valore restituito dalla funzione senza doverlo specificare nel return.
 
+
+
 ***
+
+
 
 ##### Domande orale Vigna
 
