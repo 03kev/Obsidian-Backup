@@ -8,12 +8,38 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b25891393bcc441d",
+            "id": "68d24cd9019277d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b25891393bcc441d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c235235d5777dea0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -181,21 +207,21 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "b25891393bcc441d",
+  "active": "68d24cd9019277d7",
   "lastOpenFiles": [
+    "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
     "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
     "02 Programmazione I/Appunti Teoria/2024-01-10.md",
     "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
     "02 Programmazione I/Appunti Teoria/2023-12-19.md",
     "02 Programmazione I/Appunti Teoria/2023-12-15.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
     "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
     "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
     "02 Programmazione I/Appunti Teoria/2023-12-12.md",
     "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
     "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
     "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
     "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
     "02 Programmazione I/Appunti Teoria/2023-10-31.md",

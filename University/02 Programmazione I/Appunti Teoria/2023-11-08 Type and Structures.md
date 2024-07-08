@@ -51,7 +51,7 @@ func main() {
 ```
 
 ##### Strutture definite come tipi
-Le strutture possono essere  definite come tipi
+Le strutture possono essere definite come tipi
 ```go unwrap title:
 type Person struct {
 	age int

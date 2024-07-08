@@ -303,6 +303,10 @@ Funzionamento:
 - || restituisce false se almeno una delle condizioni (e quindi almeno uno dei due bool) è vera. E' l'oppure inclusivo
 - ! prende un'espressione e lo converte nel valore booleano opposto. !(a\==b) è uguale ad a!=b
 
+###### 3.1.1 Operatori di comparazione
+In programming, _comparison operators_ are used to compare values and evaluate down to a single Boolean value of either true or false.
+- <=, >=, !=, \==,  <, >
+
 ##### 3.2    Short-circuit behaviour
 Boolean values can be combined with the && (AND) and | | (OR) operators, which have short-circuit behavior: if the answer is already determined by the value of the left operand, the right operand is not evaluated.
 - This makes it safe to write expressions like this: `{go}s != "" && s[0] == 'x'` where `s[0]` would panic if applied to an empty string.
@@ -355,17 +359,106 @@ Map elements are accessed with this notation: `{go}ages["alice"] = 32`  and they
 - Those operations are safe even if the element isn't in the map: a map loopkup using a key that isn't present returns the zero value for its type.
 - The order of map iteration is unspecified -> the order is random
 - We can use the for range loop to iterate maps over their keys and their values
+
 #### 4     Structs
+A struct is an aggregate data type that groups together zero or more named values of arbitrary types as a single entity. Each value is called a field. All of these fields are collected into a single entity that can be copied as a unit, passed to functions and returned by them, stored in arrays, and so on.
+
+These two statements declare a struct type called `Employee` and a variable called `dilbert` that is an instance of an `Employee`:
+```go unwrap title:
+type Employee struct {
+	ID int
+	Name string
+	Address string
+	Position String
+	Salary int
+}
+
+var dilbert Employee
+```
+
+- The individual fields of `dilbert` are accessed using dot notation like `{go}dilbert.Name`. 
+- Because `dilbert` is a variable, its fields are variables too, so we may assign to a field:
+  `{go}dilbert.Salary -= 5000`; 
+  or take its address and access it through a pointer: 
+  `{go}position := &dilbert.Position; *position = "Senior " + *position` 
+- The dot notation also works with a pointer to a struct:
+
+```go unwrap title:
+var employeeOfTheMonth *Employee = &dilbert
+employeeOfTheMonth.Position += " (proactive team player)"
+// last statement is equal to:
+(*employeeOfTheMonth).Position += " (proactive team player)"
+```
+
+<span style="color:rgb(124, 124, 124)">[ Notes ]</span>
+##### 4.1   Struct literals
+
+A value of a struct type can be written using a struct literal that specifies values for its fields.
+```go unwrap title:
+type Point struct{X, Y int}
+p := Point{1, 2}
+p2 := Point{Y: 3}
+```
+
+- The first form requires that a value is specified for every field and in the right ordere
+- In the second form a struct value is initialized by listing some or all of the fields names and their corresponding values. 
+	- If a field is omitted in this kind of literal, it is set to the zero value for its type.
+	- The two forms cannot be mixed.
+
+Struct values can be passed as arguments to functions and returned from them. 
+- When the structs are large, it's preferred to pass or to return them from functions using pointers for efficiency. `{go}pp := &Point{1, 2}` same thing as `{go}pp := new(Point); *pp = Point{1, 2}` 
 
 ***
 
+### Functions
+
+A function lets us wrap up a sequence of statements as a unit that can be called from elsewhere in a program, perhaps multiple times. Functions make it possible to break a large problem which requires many code lines into a number of smaller tasks. 
+Furthermore, the same task can be invoked several times, so a function promotes code reuse.
+#### 1     Function declarations
+A function declaration has a name, a list of parameters, an optional list of results and a body:
+`{go}func name(parameter_list) (result_list) { body }` 
+- The parameter list specifies the names and types of the function's parameters, which are the local variables whose values or arguments are supplied by the caller.
+- The result list specifies the types of the values that the function returns. 
+	- If the function returns one unnamed result or no results at all, parentheses are optional and usually omitted.
+	- If the result is left off the function will be called only for its effects.
+	- Also the results may be named. In that case, each name declares a local variable initialized to the zero value for its type.
+
+A function that has a result list must end with a `return` statement <span style="color:rgb(124, 124, 124)">(unless execution cannot reach the end of the function due to an infinite for loop with no break or because the functions ends with a call to panic)</span>.
+
+The invocation happens in the code of another function: the calling function.
+###### Signature
+The type of a function is sometimes called its signature. Two functions have the same type or signature if they have the same sequence of parameter types and the same sequence of result types. 
+
+Every function call must provide an argument for each parameter, in the order in which the parameters were declared.
+Parameters are local variables within the body of the function, with their initial values set to the arguments supplied by the caller.
+
+###### Call by value, call by reference
+- Arguments are passed by value, so the function receives a copy of each argument: therefore modifications to the copy do not affect the caller. 
+- However, if the arguments contains some kind of reference, like a pointer, slice, map or function, then the caller may be affected by any modifications the function makes to variables indirectly referred by the argument.
+	- That's because if you pass the memory address of that variable with `&`, then a pointer is passed to the function. Therefore the pointer is copied, not the data that it points to, and through the pointer the function changes the original value.
+	- It's cheaper to pass a pointer rather than making a copy of the object.
+
+##### 1.1   Recursion
+Functions may be recursive, that is, they may call themselves, either directly or indirectly.
+
+##### 1.2   Multiple return values
+A function can return more than one result. The result of calling a multi-valued function is a tuple of values. The caller of such a function must explicitly assign the values to variables if any of them are to be used. To ignore one of the values, it's sufficient to assign it to the blank identifier:
+`{go}num, err := strconv.Atoi(n); num, _ := strconv.Atoi(n)` 
+
+In a function with named results, the operands of a return statement may be omitted. This is called a bare return.
+- A bare return is a shorthand way to return each of the named result variables in order.
+###### 1.2.1 Blank identifier
+The blank identifier `_` can be used to discard values, effectively assigning the right-side value to nothing
+
+#### 2     Functional types
 
 
+#### 3     Defer
 
 
 ***
 
-
+Closure, go routine recover panic, switch, falltrhough, [ interfacce ], metodi. 
 
 ##### Domande orale Vigna
 
