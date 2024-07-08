@@ -11,8 +11,13 @@
             "id": "b25891393bcc441d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +126,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md"
+              }
             }
           },
           {
@@ -139,7 +148,7 @@
             }
           },
           {
-            "id": "cd8642768f007d40",
+            "id": "9fda7fbf41301fc1",
             "type": "leaf",
             "state": {
               "type": "copilot-chat-view",
@@ -147,7 +156,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",

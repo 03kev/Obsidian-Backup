@@ -321,81 +321,45 @@ Strings are value types and immutable: once created you cannot modify the conten
 ### Structured types
 
 #### 1     Arrays
-
+<span style="color:rgb(124, 124, 124)">[ Notes ]</span>
 #### 2     Slices
+<span style="color:rgb(124, 124, 124)">[ Notes ]</span>
 ##### 2.1   Append
+<span style="color:rgb(124, 124, 124)">[ Notes ]</span>
 ##### 2.2   Subslicing
+<span style="color:rgb(124, 124, 124)">[ Notes ]</span>
 
 #### 3     Maps
+The hash table is one of the most ingenious and versatile of all data structures. It is an unordered collection of key/value pairs in which all the keys are distinct, and the value associated with a given key can be retrieved, updated, or removed using a constant number of key comparisons on the average, no matter how large the hash table.
 
+In Go, a map is a reference to a hash table, and a map type is written `map[K]V`, where `K` and `V` are the types of its keys and values. All of the keys in a given map are of the same type, and all of the values are of the same type, but the keys need not be of the same type as the values. The key type K must be comparable using \==, so that the map can test whether a given key is equal to one already within it. 
+
+The built-in function `make` can be used to create a map:
+`{go}ages := make(map[string]int)` 
+
+We can also use a map litreal to create a new map populated with some initial key/value pairs:
+
+```go unwrap title:
+ages := map[string]int{
+	"alice": 31,
+	"charlie": 34,
+}
+// which is equivalent to
+ages := make(map[string]int)
+ages["alice"] = 31
+ages["charlie"] = 34
+```
+
+Map elements are accessed with this notation: `{go}ages["alice"] = 32`  and they are removed with the built-in function delete: `{go}delete(ages, "alice") //remove element ages["alice"]` 
+
+- Those operations are safe even if the element isn't in the map: a map loopkup using a key that isn't present returns the zero value for its type.
+- The order of map iteration is unspecified -> the order is random
+- We can use the for range loop to iterate maps over their keys and their values
 #### 4     Structs
 
 ***
 
-### Functions
-###### Istruzione If
-Istruzione di selezione: ci permette sulla base di una condizione di eseguire una parte di codice o un'altra
-!= , \==, >, <, >=, <= operandi di confronto
-```go unwrap title:
-if COND {
-	CORPO: il codice in questo blocco viene eseguito solo se la condizione è vera
-} else if COND2 {
-	CORPO2: il codice in questo blocco viene eseguito solo se la condizione del primo blocco è falsa e se questa è vera
-} else { //COND3
-	CORPO3: il codice in questo blocco viene eseguito solo se la condizioni dei blocchi precedenti sono false
-}
-```
-L'if è concatenabile. In un if a catena si esegue al più un singolo corpo (se c'è l'else almeno uno)
 
-COND è una condizione che restituisce un tipo booleano. L'if non accetta quindi una condizione, ma ciò che questa restituisce, ossia una variabile booleana, `{go}var bool.` 
-Ha solo due valori: `true`e `false`. Gli operatori di confronto prendono due espressioni, le comparano e restituiscono un'espressione booleana a seconda se la condizione sia vera o falsa.
-
-###### Cicli
-Il for è l'unica istruzione per eseguire un ciclo in go
-`{go}for { ... } = for true { ... } = for ;; { ... } // while true { ... }` 
-`{go}for x >= 0 { ... } // while x >= 0 { ... }`
-
-Ciclo for ternario:
-`{go}for i := 0; i < n; i ++ { ... }` 
-`for 1°_ISTRUZIONE; ESPRESSIONE_BOOLEANA; 2°_ISTRUZIONE { CORPO }`
-
-- Viene eseguita la 1° istruzione (di solito di assegnamento/dichiarazione di variabile pari a 0)
-- Si controlla l'espressione booleana che, se restituisce true, fa proseguire il ciclo. In caso contrario si esce dal ciclo.
-- Si esegue il corpo
-- Viene eseguita la 2° istruzione (di solito di incremento della variabile assegnata/dichiarata)
-- Si prosegue ricontrollando l'espressione booleana, eseguendo il corpo, ecc...
-
-Tutte le 3 parti del ciclo sono omettibili. Se si omette l'espressione booleana, di default diventa true.
-
-`{go}for i := n - 1; i >= 0; i-- { ... }` Forma idiomatica di un ciclo in discesa
-
-###### Conversione di tipo
-Nelle espressioni di go bisogna utilizzare variabili dello stesso tipo -> int * float64 = error
-`{go}b := int(a)`
-`{go}b := float64(a)` 
-
-###### Break
-si usa per uscire da un ciclo
-
-###### Funzioni
-```go unwrap title:
-func main() {
-	func nome(n int) (int, int) {
-		return n * 2, n / 2
-	}
-}
-```
-
-```go unwrap title:
-func main() {
-	func nome(n int) (c int) {
-		c = n * 2
-		return
-	}
-}
-```
-
-`{go}c`  variabile locale alla funzione. Assegnando il valore alla variabile decidiamo il valore restituito dalla funzione senza doverlo specificare nel return.
 
 
 
