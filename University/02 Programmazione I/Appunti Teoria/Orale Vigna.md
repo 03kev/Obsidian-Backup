@@ -39,7 +39,7 @@ perhaps only within a small part of it */
 
 ##### 1.1   Function declaration
 
-`{go}func function_name(parameter_list) return_value_list { ... }`
+`{go}func function_name(parameter_list) return_value_list { body }`
 
 A function declaration has:
 - a name
@@ -450,8 +450,109 @@ In a function with named results, the operands of a return statement may be omit
 ###### 1.2.1 Blank identifier
 The blank identifier `_` can be used to discard values, effectively assigning the right-side value to nothing
 
-#### 2     Functional types
+##### 1.3   Functions as parameters
+Functions can be used as parameters in another function. The passed function can then be called within the body of that function, and that's why it's commonly called a callback.
 
+```go unwrap title:
+func Add(a, b int) {
+	Println("The sum of", a, "and", b, "is:", a+b)
+}
+
+func callback(y int, f func(int, int)) {
+	f(y, 2) // this becomes Add(1, 2) when called by line 10
+}
+
+func main() {
+	callback(1, Add)
+}
+```
+
+For example, from the package `sort`, the function `{go}sort.Slice(x any, func(i, j int) bool)` accepts a callback function to determine the behaviour of the sorting.
+
+#### 2     Functional types
+They are used to organize not data like the other types, but rather the code.
+They are declared like `{go}var name func(arguments_types) (return_types)` 
+
+```go unwrap title:
+func nothing (x int, s string) (bool, int) {
+	return true, x*2
+}
+	
+func main() {
+	var x func(int, string) (bool, int)
+	x = nothing
+	// also x := nothing
+	Println(x(5, "hi"))
+}
+```
+
+The zero value of a function type is `nil`. Calling a nil function value causes a panic.
+ - Function values may be compared with nil, but are not comparable between each other.
+
+We can change the behaviour of the functions depending on the code that it's passed to them:
+
+```go unwrap title:
+func product(x int, f func(int) int) int {
+	return f(x) // the function type f has access to the variable x because
+				// they are both located in the same lexical block
+}
+
+func double(x int) int { return 2*x }
+
+func triple(x int) int { return 3*x }
+
+func main() {
+	Println(product(5, double))
+	Println(product(5, triple))
+	l := 100
+
+	f := func(x int) int { // function literal
+		return l*4 // f has access to all the variables declared within the 
+				   // lexical block where its declared
+	}
+	
+	Println(f(4), product(5, f)) // 400 400
+
+	Println(product(10, func(y int) int { // anonymous function
+		return y*y 
+	}))
+}
+```
+
+##### 2.1   Anonymous functions / Function literals (closures)
+A function literal represents an anonymous function: `{go}func(x, y int) int { return x + y }` 
+
+A function literal can be assigned to a variable or invoked directly:
+
+```go unwrap title:
+func main() {
+	f := func(x, y int) int { return x + y }
+	Println(f(3, 2))
+	
+	func(m, n int) (bool, int) {
+		return true, m * n
+	}(10, 2) // true 20
+}
+```
+
+That's because it's not a function that can stand on its own, but it can be assigned to a variable that is a reference to that function, and then it can invoked as if the name of the variable was the name of the function.
+
+- Like all functions they can be with or without parameters:
+```go unwrap title:
+func main() {
+	v := "Hello World"
+	func (u string) {
+		Println(u)
+	}(v) // Hello World
+}
+```
+
+
+
+Function literals are _closures_: they may refer to variables defined in a surrounding function<span style="color:rgb(124, 124, 124)">/lexical block</span>. Those variables are then shared between the surrounding function and the function literal, and they survive as long as they are accessible.
+
+Named functions can be declared only at the package level, but we can use a function literal to denote a function value within any expression. A function literal is written like a function declaration, but without a name following the func keyword. It is an expression, and its value is called an anonymous function.
+Function literals let us define a function at its point of use. 
 
 #### 3     Defer
 
