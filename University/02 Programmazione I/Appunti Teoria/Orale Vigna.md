@@ -511,7 +511,7 @@ func main() {
 				   // lexical block where its declared
 	}
 	
-	Println(f(4), product(5, f)) // 400 400
+	Println(f(4), product(5, f), l) // 400 400
 
 	Println(product(10, func(y int) int { // anonymous function
 		return y*y 
@@ -520,14 +520,22 @@ func main() {
 ```
 
 ##### 2.1   Anonymous functions / Function literals (closures)
-A function literal represents an anonymous function: `{go}func(x, y int) int { return x + y }` 
+Named functions can be declared only at the package level, but we can use a function literal to denote a function value within any expression. A function literal is written like a function declaration, but without a name following the func keyword. It is an expression, and its value is called an anonymous function.
+Function literals let us define a function at its point of use. 
 
+A function literal represents an anonymous function: `{go}func(x, y int) int { return x + y }` 
 A function literal can be assigned to a variable or invoked directly:
 
 ```go unwrap title:
 func main() {
-	f := func(x, y int) int { return x + y }
-	Println(f(3, 2))
+	z := 3
+	f := func(x, y int) int { 
+		z++
+		return x + y + z 
+	}
+	/* I can use z inside of the anonymous function because f it's a closure: it
+	   can refer to variables in its lexical block and change them even outside */
+	Println(f(3, 2), z) // 9 4
 	
 	func(m, n int) (bool, int) {
 		return true, m * n
@@ -547,13 +555,82 @@ func main() {
 }
 ```
 
-
-
 Function literals are _closures_: they may refer to variables defined in a surrounding function<span style="color:rgb(124, 124, 124)">/lexical block</span>. Those variables are then shared between the surrounding function and the function literal, and they survive as long as they are accessible.
+- A closure inherits the scope of the function in which it is created.
 
-Named functions can be declared only at the package level, but we can use a function literal to denote a function value within any expression. A function literal is written like a function declaration, but without a name following the func keyword. It is an expression, and its value is called an anonymous function.
-Function literals let us define a function at its point of use. 
+###### 2.1.1 Functions returning other functions
 
+```go unwrap title:
+func main() {
+	var f = Adder()
+	var d = Adder()
+	
+	var AdderLiteral = func() func(int) int {
+		var x int
+		return func(delta int) int {
+			x += delta
+			return x
+		}
+	}
+
+	g := AdderLiteral()
+	Println("g:", g(1), g(20), g(300)) 	// 1 21 321
+	Println("f:", f(4), f(-30)) // 4 -26
+	Println("d:", d(3)) // 3
+
+}
+
+func Adder() func(int) int {
+	var x int
+	return func(delta int) int {
+		x += delta
+		return x
+	}
+}
+```
+
+```go unwrap title:
+func main() {
+    f := squares()
+	Println(f()) // "1"
+	Println(f()) // "4"
+    Println(f()) // "9"
+	Println(f()) // "16"
+}
+
+func squares() func() int {
+	var x int
+	return func() int {
+		x++
+		return x * x 
+	}
+}
+```
+
+Functions defined int this way have access to the entire lexical environment, so the inner function can refer to variables from the enclosing function as shown in the upper example.
+- The function `squares` returns another function of type `func() int`. A call to `squares` creates a local variable `x` and returns an anonymouse function that, each time it is called, increments `x` and returns its square. A second call to `squares` would create a second `x`and return a new anonymous fucntion which increments that variable.
+
+Functions therefore are not just code but can have a state. The anonymous inner function can access and update the local variables of the enclosing function `squares`. These hidden variable references are why we classify functions as reference types and why function values are not comparable. 
+
+Here the lifetime of a variable is not determined by its scope: the variable `x` exists after `squares`has returned within `main`, even though `x` is hidden inside `f`.
+
+
+```go unwrap title:"Lexical Closure for Exam"
+func g(f func()) func() {
+	return f
+}
+
+func main() {
+	x := 0
+	f := func() {
+		x++
+	}
+
+	Println(x) // 0
+	g(f)()
+	Println(x) // 1
+}
+```
 #### 3     Defer
 
 
