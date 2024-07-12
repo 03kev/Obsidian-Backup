@@ -107,4 +107,32 @@ func main() {
 Metodi per le strutture
 https://gobyexample.it/metodi.html
 
+###### Method on a Struct
+- **Definition**: A method is a function that has a receiver argument. The receiver can be either a struct type or a pointer to a struct.
+- **Syntax**: Defined within the scope of a type (usually a struct). The method is called on an instance of that type.
+- **Usage**: Used to implement behavior that is closely associated with the struct. It can access and modify the struct's fields.
+- **Example**:
+    type MyStruct struct {
+        Value int
+    }
+    func (s *MyStruct) Increment() {
+        s.Value++
+    }
+###### Passing a Struct as an Argument to a Function
+- **Definition**: A function that takes one or more arguments, where one of the arguments can be a struct or a pointer to a struct.
+- **Syntax**: Defined independently of a struct. The struct must be passed explicitly to the function.
+- **Usage**: Used when the behavior is not tightly coupled to the struct or when the function needs to operate on multiple types.
+- **Example**:
+    type MyStruct struct {
+        Value int
+    }
+    func Increment(s *MyStruct) {
+        s.Value++
+    }
+###### Key Differences
+1. **Context and Association**: Methods are defined within the context of a type and are called on instances of that type, suggesting a closer association with the type. Functions are defined independently and can operate on any type passed to them.
+2. **Syntax for Invocation**: Methods are invoked on an instance of the type (e.g., `instance.Method()`), while functions are called with the instance as an argument (e.g., `Function(instance)`).
+3. **Encapsulation**: Methods can be used to encapsulate behavior within a type, adhering to object-oriented principles. Functions, being more general, can operate on any data passed to them.
+4. **Pointer Semantics**: When a method has a pointer receiver, it can modify the original struct it's called on. Functions can also modify the original struct if a pointer to the struct is passed as an argument.
+
 http://www.valeriofinazzo.it/wordpress/2020/08/tutorial-go-metodi-e-interfacce/

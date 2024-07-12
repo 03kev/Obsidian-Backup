@@ -607,7 +607,7 @@ func squares() func() int {
 }
 ```
 
-Functions defined int this way have access to the entire lexical environment, so the inner function can refer to variables from the enclosing function as shown in the upper example.
+Functions defined in this way have access to the entire lexical environment, so the inner function can refer to variables from the enclosing function as shown in the upper example.
 - The function `squares` returns another function of type `func() int`. A call to `squares` creates a local variable `x` and returns an anonymouse function that, each time it is called, increments `x` and returns its square. A second call to `squares` would create a second `x`and return a new anonymous fucntion which increments that variable.
 
 Functions therefore are not just code but can have a state. The anonymous inner function can access and update the local variables of the enclosing function `squares`. These hidden variable references are why we classify functions as reference types and why function values are not comparable. 
@@ -632,6 +632,78 @@ func main() {
 }
 ```
 #### 3     Defer
+
+
+***
+
+### Methods
+
+A method is a function associated with a particular type. 
+
+##### Method declaration
+A method is declared with a variant of the ordinary function declaration in which an extra parameter appears before the function name. The parameter attaches the function to the type of that parameter.
+
+```go unwrap title:
+package geometry
+
+import "math"
+
+type Point struct{ X, Y float64}
+
+// traditional function
+func Distance(p, q Point) float64 {
+	return math.Hypot(q.X - p.X, q.Y - p.Y)
+}
+
+// same thing, but as a methof of the Point type
+func (p Point) Distance(q Point) float64 { 
+	return math.Hypot(q.X - p.X, q.Y - p.Y)
+}
+```
+
+The extra parameter `p` is called the method's receiver. 
+- In Go, differently from other object-oriented languages, we don't use special names like `this` or `self` for the receiver, but we choose their names like we would for any other parameter.
+
+In a method call, the receiver argument appears before the method name. This parallels the declaration, in which the receiver parameter appears before the method name.
+
+```go unwrap title:
+p := Point{1, 2}
+q := Point{4, 6}
+fmt.Println(Distance(p, q)) // "5" function call
+fmt.Println(p.Distance(q))  // "5" method call
+```
+
+- There's no conflict between the two declaration of functions called `Distance` above. The first declares a package-level function called `geometry.Distance`, while the second declares a method of the type `Point`, so its name is `Point.Distance`.
+
+###### Methods with a pointer receiver
+Calling a function makes a copy of each argument value, so if a function need to update a variable of if one of its arguments is so large that it would be prefered to avoid copying it, than we must pass the address of the variable using a pointer.
+
+The same thing applies to methods that need to update the receiver variable: we attach them to the pointer type, such as `*Point`
+
+```go unwrap title:
+func (p *Point) ScaleBy(factor float64) {
+	p.X *= factor
+	p.Y *= factor
+}
+```
+- The name of this method is `(*Point).ScaleBy` (the parentheses are necessary).
+
+###### Methods values and expressions
+The selector `p.Distance` yields a method value, a function that binds a method (`Point.Distance`) to a specific receiver value `p`. This function can then be invoked without a receiver value, it needs only the non-receiver arguments.
+
+```go unwrap title:
+distanceFromP := p.Distance // method value
+fmt.Println(distanceFromP(q)) // "5"
+
+var origin Point  // {0, 0}
+fmt.Println(distanceFromP(origin)) // "√5"
+
+scaleP := p.ScaleBy // method value
+scaleP(2) // p becomes (2, 4)
+scaleP(10) // p becomes (20, 40)
+```
+
+
 
 
 ***
