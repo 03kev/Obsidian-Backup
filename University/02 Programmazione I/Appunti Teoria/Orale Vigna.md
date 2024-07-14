@@ -2,7 +2,6 @@
 ###### Zucchero sintattico
 Con "zucchero sintattico" si intendono i costrutti sintattici che non cambiano la struttura del programma ma soltanto la forma. L'assgnazione breve è un caso evidente di zucchero sintattico.
 
-
 ***
 ### Program Structure
 
