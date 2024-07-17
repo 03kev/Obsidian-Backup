@@ -4,37 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "3c199389cb9f20d3",
+        "id": "ad410a20817b527b",
         "type": "tabs",
         "children": [
           {
-            "id": "68d24cd9019277d7",
+            "id": "32c85163984e6c22",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1d158f9bf9134230",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "02 Programmazione I/Appunti Teoria/Orale Vigna.md"
-              }
+              "state": {}
             }
           },
           {
@@ -195,22 +172,23 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "1d158f9bf9134230",
+  "active": "32c85163984e6c22",
   "lastOpenFiles": [
+    "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+    "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
+    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
+    "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
     "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
     "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
-    "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
     "02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png",
     "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
     "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
     "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
     "02 Programmazione I/Appunti Teoria/2024-01-10.md",
     "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
     "02 Programmazione I/Appunti Teoria/2023-12-19.md",
     "02 Programmazione I/Appunti Teoria/2023-12-15.md",
     "02 Programmazione I/Appunti Teoria/2023-12-12.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
     "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
     "02 Programmazione I/Appunti Teoria/2023-11-03.md",
     "02 Programmazione I/Appunti Teoria/2023-10-31.md",
@@ -226,7 +204,6 @@
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105835.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105620.png",
     "Untitled 1.md",
-    "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508101121.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508093308.png",
     "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429120024.png",
