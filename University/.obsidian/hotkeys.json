@@ -24,14 +24,6 @@
       "key": "E"
     }
   ],
-  "app:toggle-left-sidebar": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": ","
-    }
-  ],
   "colored-text:color-text": [
     {
       "modifiers": [
@@ -91,15 +83,6 @@
       "key": "P"
     }
   ],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "."
-    }
-  ],
   "switcher:open": [],
   "darlal-switcher-plus:switcher-plus:open": [
     {
@@ -116,6 +99,23 @@
         "Ctrl"
       ],
       "key": "S"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "`"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "`"
     }
   ]
 }

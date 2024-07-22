@@ -630,7 +630,7 @@ func main() {
 	Println(x) // 1
 }
 ```
-#### 3     Defer
+#### 3     Defer, Panic, Recover
 
 
 ***
@@ -704,10 +704,7 @@ scaleP(10) // p becomes (20, 40)
 
 
 
-
 ***
-
-Closure, go routine recover panic, switch, falltrhough, [ interfacce ], metodi. 
 
 ##### Domande orale Vigna
 
@@ -742,6 +739,8 @@ Closure, go routine recover panic, switch, falltrhough, [ interfacce ], metodi.
 - Verificare la distanza tra due elementi di una mappa
 
 ***
+
+#### Programma Programmazione I - 2023/2024
 
 Il programma di massima del corso è il seguente (TWG=The Way to Go):
 
