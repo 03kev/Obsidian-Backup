@@ -14,5 +14,6 @@
     "downscalePercent": 70
   },
   "autoConvertHtml": true,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "vimMode": false
 }

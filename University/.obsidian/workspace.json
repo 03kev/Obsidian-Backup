@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+                "file": "02 Programmazione I/Appunti Teoria/2023-10-31.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+                "file": "02 Programmazione I/Appunti Teoria/2023-10-31.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+                "file": "02 Programmazione I/Appunti Teoria/2023-10-31.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md"
+                "file": "02 Programmazione I/Appunti Teoria/2023-10-31.md"
               }
             }
           },
@@ -182,6 +182,7 @@
   },
   "active": "32c85163984e6c22",
   "lastOpenFiles": [
+    "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
     "01 Architettura II/Appunti Teoria/CPU a ciclo multiplo.md",
     "01 Architettura II/Appunti Teoria/03 - Hamming Code.md",
     "01 Architettura II/Appunti Teoria/02 - Memories.md",
@@ -197,7 +198,6 @@
     "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
     "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
     "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
-    "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
     "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
     "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
     "02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png",
