@@ -61,7 +61,7 @@ Now every memory block has preassigned a place in the cache.
 
 ***
 
-- If the central memory is organised in blocks, those blocks are in number far greater than the cache lines -> in a single cache line correspond more central memory blocks (like in the examples)
+- If the central memory is organised in blocks, those blocks are in number far greater than the cache lines -> a single cache line corresponds to more central memory blocks (like in the examples)
 	- It's not sufficient to assign those blocks to the cache lines: we have to identify the specific block that is effectively stored in the cache.
 
 - From the cache line, we also cannot find the address of the data contained in it, but it is also true that we have a restricted area: we know all the addresses of every memory block that could be stored in that specific cache line.

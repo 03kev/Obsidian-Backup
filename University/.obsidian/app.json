@@ -15,5 +15,5 @@
   },
   "autoConvertHtml": true,
   "readableLineLength": true,
-  "vimMode": false
+  "vimMode": true
 }

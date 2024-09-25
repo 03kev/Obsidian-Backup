@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ad410a20817b527b",
+        "id": "788fbadd5829821a",
         "type": "tabs",
         "children": [
           {
-            "id": "32c85163984e6c22",
+            "id": "4f8e8b868e7f56af",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Programmazione I/Appunti Teoria/2023-10-31.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/2023-10-31.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 Programmazione I/Appunti Teoria/2023-10-31.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "02 Programmazione I/Appunti Teoria/2023-10-31.md"
-              }
+              "state": {}
             }
           },
           {
@@ -180,55 +171,56 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "32c85163984e6c22",
+  "active": "4f8e8b868e7f56af",
   "lastOpenFiles": [
-    "04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
-    "01 Architettura II/Appunti Teoria/CPU a ciclo multiplo.md",
-    "01 Architettura II/Appunti Teoria/03 - Hamming Code.md",
-    "01 Architettura II/Appunti Teoria/02 - Memories.md",
-    "01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
-    "01 Architettura I/Appunti Teoria/Mappe di Karnaugh.canvas",
-    "01 Architettura I/Appunti Teoria/CPU a Singolo Ciclo.md",
-    "02 Programmazione I/Appunti Teoria/2023-10-31.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-03.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
-    "02 Programmazione I/Appunti Teoria/To Do.md",
-    "02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
-    "02 Programmazione I/Appunti Teoria/Orale Vigna.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
-    "02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
-    "02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png",
-    "02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
-    "02 Programmazione I/Appunti Teoria/2024-01-10.md",
-    "02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-19.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-15.md",
-    "02 Programmazione I/Appunti Teoria/2023-12-12.md",
-    "02 Programmazione I/Appunti Teoria/attachments/image.png",
-    "01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
-    "01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520111518.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105835.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105620.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508101121.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508093308.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429120024.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429112313.png",
-    "01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429110329.png",
+    "Anno 2",
+    "Anno 1",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
+    "Anno 1/01 Architettura I/Appunti Teoria/CPU a Singolo Ciclo.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-19.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-03.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
+    "Anno 1/01 Architettura II/Appunti Teoria/02 - Memories.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-10-31.md",
+    "Anno 1/04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
+    "Anno 1/01 Architettura II/Appunti Teoria/CPU a ciclo multiplo.md",
+    "Anno 1/01 Architettura II/Appunti Teoria/03 - Hamming Code.md",
+    "Anno 1/01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
+    "Anno 1/01 Architettura I/Appunti Teoria/Mappe di Karnaugh.canvas",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/To Do.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/Orale Vigna.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2024-01-10.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-15.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-12.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/attachments/image.png",
+    "Anno 1/01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
+    "Anno 1/01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520111518.png",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105835.png",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105620.png",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508101121.png",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240508093308.png",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429120024.png",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429112313.png",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240429110329.png",
     "config/js_scripts/prova.js.js",
-    "04 Logica Matematica/Appunti Teoria",
-    "04 Logica Matematica",
-    "01 Architettura II/Appunti Teoria",
+    "Anno 1/04 Logica Matematica/Appunti Teoria",
+    "Anno 1/04 Logica Matematica",
+    "Anno 1/01 Architettura II/Appunti Teoria",
     "attachments",
-    "01 Architettura II",
-    "01 Architettura II/Appunti Teoria/attachments",
-    "01 Architettura II/Laboratorio",
-    "01 Architettura II/Laboratorio/attachments",
+    "Anno 1/01 Architettura II",
+    "Anno 1/01 Architettura II/Appunti Teoria/attachments",
+    "Anno 1/01 Architettura II/Laboratorio",
+    "Anno 1/01 Architettura II/Laboratorio/attachments",
     "Untitled.canvas",
-    "config/copilot-conversations",
     "Programmazione I/Untitled.canvas",
     "Architettura degli Elaboratori/Untitled/Untitled.canvas"
   ]

@@ -24,9 +24,9 @@
     "iconInTitleEnabled": false,
     "iconsBackgroundCheckEnabled": false
   },
-  "02 Programmazione I": "FabGofore",
-  "03 Linguaggi Formali e Automi": "FasLanguage",
-  "01 Architettura I": "FasMicrochip",
-  "01 Architettura II": "FasMicrochip",
-  "04 Logica Matematica": "LiMoveHorizontal"
+  "Anno 1/01 Architettura I": "FasMicrochip",
+  "Anno 1/04 Logica Matematica": "LiMoveHorizontal",
+  "Anno 1/03 Linguaggi Formali e Automi": "FasLanguage",
+  "Anno 1/02 Programmazione I": "FabGofore",
+  "Anno 1/01 Architettura II": "FasMicrochip"
 }
