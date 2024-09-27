@@ -252,14 +252,18 @@ $$
 &\text{\normalsize $\bullet$} \; \text{BASE: } y = 0 \\
 &\quad \text{restituisce 1 e } x^{y} = x^{0} = 1 \\ \\
 
-&\text{\normalsize $\bullet$} \; \text{INDUZIONE: }  \\[2pt]
-&\quad \text{\small $\circ$} \; \text{\small CASO y PARI} \\
+&\text{\normalsize $\bullet$} \; \text{INDUZIONE: } < y \rightarrow y \text{\scriptsize \quad(si suppone che sia vera per tutti i valori minori di un certo y)} \\[2pt]
+&\quad \text{\small $\circ$} \; \text{\small CASO yh PARI} \\
 &\quad \quad (x^{\scriptsize \dfrac{y}{2}}) ^ {\large\ 2} = x^{y} \rightarrow \text{risultato} \\
-
-\\ &\quad \text{\small $\circ$} \; \text{\small CASO y DISPARI} \\
+&\hspace{2.55em} \text{\small \downarrow} \\
+&\hspace{1.8em} \text{\small risultato di potenza(x, y/2) } \text{\scriptsize \; (per ipotesi di induzione)} && \\
+\\
+&\quad \text{\small $\circ$} \; \text{\small CASO y DISPARI} \\
 &\quad \quad \text{potenza(x, y/2)} = x^{\lfloor \small \dfrac{y}{2} \normalsize \rfloor} = x^{\small\dfrac{\text{y - 1}}{2}} \\
-&\quad \quad (x^{\small \dfrac{\text{y - 1}}{2}})^{\text{\large\ 2}}=x^{\text{\large\ y - 1}}\\ 
-&\quad \quad x^{\text{\large\ y - 1}}\ x = x^{\large\ y}
+&\hspace{8.9em} \text{\small \downarrow} \\
+&\hspace{5.9em} \text{\small per ipotesi di induzione} && \\
+&\quad \quad (x^{\scriptsize \dfrac{\text{y - 1}}{2}})^{\text{\normalsize\ 2}}=x^{\text{\normalsize\ y - 1}}\\ 
+&\quad \quad x^{\text{\normalsize\ y - 1}}\ x = x^{\normalsize\ y}
 &&
 
 \end{flalign}
@@ -276,4 +280,22 @@ ELSE
 	RETURN power
 ```
 
+Sia $T(x, y)$ il tempo misurato come numero di righe di codice che vengono eseguite su input $x,y \hspace{0.1em}$. 
+- $y=0$ vengono eseguite le linee $1,2 \rightarrow T=2$ 
+- $y > 0$ :
+	- vengono eseguite le linee $1, 3, 4, 5, 7 \rightarrow T = 5$
+	- viene eseguita la linea $6$ per $y$ dispari $\rightarrow T ≤ 1$ 
+	- la linea $3$ esegue una chiamata ricorsiva con un suo tempo $\rightarrow T(x, \lfloor \dfrac{y}{2} \rfloor)$
+
+$T_{tot} ≤ 6 + T(x, \lfloor \dfrac{y}{2} \rfloor)$
+$$
+\begin{flalign}
+T(x, y) ≤
+\begin{cases}
+2 & \text{se } y = 0 \\
+6 + T(x, \lfloor \dfrac{y}{2} \rfloor) & \text{altrimenti}
+\end{cases} \quad \longrightarrow \text{equazione di ricorrenza} && 
+\end{flalign}
+$$
 ###### Secondo Caso
+
