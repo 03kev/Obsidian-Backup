@@ -104,18 +104,19 @@
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
-        "Ctrl"
+        "Mod",
+        "Shift"
       ],
-      "key": "`"
+      "key": ","
     }
   ],
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
-        "Ctrl",
+        "Mod",
         "Shift"
       ],
-      "key": "`"
+      "key": "."
     }
   ]
 }

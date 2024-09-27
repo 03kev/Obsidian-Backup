@@ -11,8 +11,13 @@
             "id": "eee37422353b33e9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "right": {
     "id": "09f2d08edbef226d",
@@ -81,6 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +126,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md"
+              }
             }
           },
           {
@@ -173,6 +183,9 @@
   },
   "active": "eee37422353b33e9",
   "lastOpenFiles": [
+    "Anno 2/corsi_facoltativi.md",
+    "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md",
+    "Anno 2/algoritmi e strutture dati/teoria/algorithm.go",
     "Anno 2",
     "Anno 1",
     "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
@@ -202,7 +215,6 @@
     "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-12.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/attachments/image.png",
     "Anno 1/01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
-    "Anno 1/01 Architettura II/Laboratorio/Laboratorio Assembly 01.md",
     "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520111518.png",
     "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105835.png",
     "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105620.png",
@@ -218,8 +230,6 @@
     "attachments",
     "Anno 1/01 Architettura II",
     "Anno 1/01 Architettura II/Appunti Teoria/attachments",
-    "Anno 1/01 Architettura II/Laboratorio",
-    "Anno 1/01 Architettura II/Laboratorio/attachments",
     "Untitled.canvas",
     "Programmazione I/Untitled.canvas",
     "Architettura degli Elaboratori/Untitled/Untitled.canvas"
