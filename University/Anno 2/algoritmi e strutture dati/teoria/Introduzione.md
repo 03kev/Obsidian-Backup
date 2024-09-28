@@ -8,17 +8,27 @@ Un algoritmo è un procedimento per la risoluzione di un problema.
 Le strutture dei dati sono dei modi per organizzare i dati.
 
 #### Algoritmica
+
 Algoritmica: la parte dell'informatica che si occupa di tutti gli aspetti legati agli algoritmi.
 - Progettazione degli algoritmi
+
 - Studio delle strutture dati da essi utilizzate
+
 - Analisi della loro efficienza
+
 - Studio delle limitazioni inerenti e complessità dei problemi
+
 - Definizione di nuovi modelli di calcolo
+
+    
 
 Nella progettazione di un algoritmo sono importanti:
 - Correttezza: l'algoritmo deve risolvere il problema
+
 - Efficienza: l'algoritmo deve risolvere il problema nel minor tempo possibile
-Queste due caratteristiche rientrano nell'analisi dell'algoritmo.
+  Queste due caratteristiche rientrano nell'analisi dell'algoritmo.
+
+  
 
 Nella progettazione di un algoritmo è importante tenere conto dell'uso delle risorse:
 - Tempo
@@ -26,7 +36,9 @@ Nella progettazione di un algoritmo è importante tenere conto dell'uso delle ri
 - Rete
 - Processori (quanti ne usiamo)
 - Consumo di energia
-Tutti questi fattori influiscono sull'efficienza dell'algoritmo.
+  Tutti questi fattori influiscono sull'efficienza dell'algoritmo.
+
+  
 
 Studiare l'algoritmica è importante per:
 - Risolvere problemi: aspetto pratico
@@ -108,6 +120,7 @@ ALGORITMO moltiplicazione(intero a, intero b) -> intero
 
 se $b=0$ eseguo le linee $1,2,5 \rightarrow T=3$
 se $b>0$:
+
 - Le linee $1,5$ sono eseguite una volta $\rightarrow T=2$
 - Le linee $3,4$ sono eseguite $b$ volte $\rightarrow T=2b$
 - La linea $2$ è eseguita $b{+}1$ volte $\rightarrow T=b{+}1$
@@ -253,7 +266,7 @@ $$
 &\quad \text{restituisce 1 e } x^{y} = x^{0} = 1 \\ \\
 
 &\text{\normalsize $\bullet$} \; \text{INDUZIONE: } < y \rightarrow y \text{\scriptsize \quad(si suppone che sia vera per tutti i valori minori di un certo y)} \\[2pt]
-&\quad \text{\small $\circ$} \; \text{\small CASO yh PARI} \\
+&\quad \text{\small $\circ$} \; \text{\small CASO y PARI} \\
 &\quad \quad (x^{\scriptsize \dfrac{y}{2}}) ^ {\large\ 2} = x^{y} \rightarrow \text{risultato} \\
 &\hspace{2.55em} \text{\small \downarrow} \\
 &\hspace{1.8em} \text{\small risultato di potenza(x, y/2) } \text{\scriptsize \; (per ipotesi di induzione)} && \\
