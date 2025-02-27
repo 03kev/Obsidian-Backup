@@ -20,15 +20,12 @@ Algoritmica: la parte dell'informatica che si occupa di tutti gli aspetti legati
 
 - Definizione di nuovi modelli di calcolo
 
-    
 
 Nella progettazione di un algoritmo sono importanti:
 - Correttezza: l'algoritmo deve risolvere il problema
 
 - Efficienza: l'algoritmo deve risolvere il problema nel minor tempo possibile
   Queste due caratteristiche rientrano nell'analisi dell'algoritmo.
-
-  
 
 Nella progettazione di un algoritmo è importante tenere conto dell'uso delle risorse:
 - Tempo
@@ -38,12 +35,10 @@ Nella progettazione di un algoritmo è importante tenere conto dell'uso delle ri
 - Consumo di energia
   Tutti questi fattori influiscono sull'efficienza dell'algoritmo.
 
-  
-
 Studiare l'algoritmica è importante per:
 - Risolvere problemi: aspetto pratico
 - Forniscono delle metodologie che sono utili nelle altre discipline: aspetto teorico
-##### Problema del commesso viaggiatore
+###### Problema del commesso viaggiatore
 Istanza del problema (input):
 - n città
 - distanza tra le città
@@ -51,6 +46,8 @@ Problema:
 - Trovare il percorso più breve che visiti tutte le città e torni al punto di partenza
 
 Gli algoritmi che risolvono il problema calcolano le permutazioni delle città: n! permutazioni.
+
+La logica si occupa di studiare le leggi del ragionamento in modo razionale, definito come segue: un ragionamento è valido se è vero in tutte le circostanze di un contesto in cui sono vere le premesse.
 
 ***
 ### Lezione 2 - 27/09/2024

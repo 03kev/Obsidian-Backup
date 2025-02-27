@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4fee34335dfa888e",
+        "id": "67247b7c1a495be6",
         "type": "tabs",
         "children": [
           {
-            "id": "eee37422353b33e9",
+            "id": "9df342aa77f9ad3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -17,7 +17,9 @@
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Introduzione"
             }
           }
         ]
@@ -40,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -55,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -63,16 +69,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 268.5,
-    "collapsed": true
+    "width": 268.5
   },
   "right": {
     "id": "09f2d08edbef226d",
@@ -88,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md",
+                "file": "Anno 1/01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 01 - Scheduling Dinamico"
             }
           },
           {
@@ -105,10 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md",
+                "file": "Anno 1/01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 01 - Scheduling Dinamico"
             }
           },
           {
@@ -119,7 +129,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -128,8 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md"
-              }
+                "file": "Anno 1/01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 01 - Scheduling Dinamico"
             }
           },
           {
@@ -137,7 +151,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -145,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -153,7 +171,9 @@
             "type": "leaf",
             "state": {
               "type": "copilot-chat-view",
-              "state": {}
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
         ],
@@ -182,40 +202,39 @@
       "darlal-switcher-plus:Open Symbols for the active editor": true
     }
   },
-  "active": "eee37422353b33e9",
+  "active": "9df342aa77f9ad3d",
   "lastOpenFiles": [
-    "Anno 2/corsi_facoltativi.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/Orale Vigna.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-19.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2024-01-10.md",
+    "Anno 1/01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
+    "Anno 1/01 Architettura I/Appunti Teoria/Mappe di Karnaugh.canvas",
+    "Anno 1/01 Architettura I/Appunti Teoria/CPU a Singolo Ciclo.md",
+    "Anno 1/01 Architettura II/Appunti Teoria/02 - Memories.md",
+    "Anno 1/01 Architettura II/Appunti Teoria/03 - Hamming Code.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
+    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-03.md",
     "Anno 2/algoritmi e strutture dati/teoria/Introduzione.md",
+    "Anno 2/corsi_facoltativi.md",
     "Anno 2/algoritmi e strutture dati/teoria/algorithm.go",
     "Anno 2",
     "Anno 1",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-28 Recursivity.md",
-    "Anno 1/01 Architettura I/Appunti Teoria/CPU a Singolo Ciclo.md",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-19.md",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-03.md",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-15 Printf.md",
-    "Anno 1/01 Architettura II/Appunti Teoria/02 - Memories.md",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-10 Array e Slice.md",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-07 Pointers.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/2023-10-31.md",
     "Anno 1/04 Logica Matematica/Appunti Teoria/Lezione 2 - Logica Proposizionale.md",
     "Anno 1/01 Architettura II/Appunti Teoria/CPU a ciclo multiplo.md",
-    "Anno 1/01 Architettura II/Appunti Teoria/03 - Hamming Code.md",
-    "Anno 1/01 Architettura II/Appunti Teoria/01 - Scheduling Dinamico.md",
-    "Anno 1/01 Architettura I/Appunti Teoria/Mappe di Karnaugh.canvas",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-14 Slice ed os.Args.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/To Do.md",
-    "Anno 1/02 Programmazione I/Appunti Teoria/Rune e Stringhe in Go.md",
-    "Anno 1/02 Programmazione I/Appunti Teoria/Orale Vigna.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-13 Functional Types.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/attachments/Pointers-in-Golang.png",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2023-11-08 Type and Structures.md",
-    "Anno 1/02 Programmazione I/Appunti Teoria/2024-01-10.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/2024-01-09 Moduli.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-15.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/2023-12-12.md",
     "Anno 1/02 Programmazione I/Appunti Teoria/attachments/image.png",
-    "Anno 1/01 Architettura II/Laboratorio/Laboratorio Assembly 02.md",
     "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520111518.png",
     "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105835.png",
     "Anno 1/01 Architettura II/Appunti Teoria/attachments/Pasted image 20240520105620.png",

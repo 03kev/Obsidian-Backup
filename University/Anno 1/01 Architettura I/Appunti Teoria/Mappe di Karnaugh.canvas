@@ -2,7 +2,7 @@
 	"nodes":[
 		{"id":"a89cdd6780fd4764","type":"group","x":-629,"y":-459,"width":719,"height":518,"label":"Introduzione"},
 		{"id":"2b55a3927a2809f2","type":"group","x":664,"y":-659,"width":536,"height":401,"label":"Rappresentazione Grafica Stringa"},
-		{"id":"3d22a65a8f28b10a","type":"text","text":"**MAPPE DI KARNAUGH**","x":193,"y":-61,"width":250,"height":60,"color":"1"},
+		{"id":"43aa385a6dfd2c90","type":"text","text":"Metodo per semplificare le espressioni booleane che si basa sull'identificazione degli implicanti","x":169,"y":109,"width":298,"height":152},
 		{"id":"4c714c4853bacc8d","type":"text","text":"Non si ha la sicurezza di aver trovato l'espressione più semplice","x":-609,"y":-89,"width":280,"height":117},
 		{"id":"85e0332f0b8ac3b5","type":"text","text":"Garantisce di trovare l'espressione minima","x":-144,"y":148,"width":250,"height":74},
 		{"id":"a73e356461c5f7bf","type":"text","text":"**SEMPLIFICAZIONE DI CIRCUITI**","x":-203,"y":-439,"width":225,"height":71,"color":"1"},
@@ -11,6 +11,7 @@
 		{"id":"5b6a57d18beb95e6","type":"text","text":"![[Pasted image 20231030090636.png| C | myInv]] ","x":856,"y":-525,"width":344,"height":266},
 		{"id":"8d7420f6090ecb8e","type":"text","text":"Si utilizza uno schema grafico di n-dimensioni per rappresentare questa stringa binaria","x":856,"y":-659,"width":344,"height":138},
 		{"id":"3c93a7c4a32fd5ab","type":"file","file":"Anno 1/01 Architettura I/Appunti Teoria/attachments/Pasted image 20231030090604.png","x":665,"y":-659,"width":191,"height":400},
+		{"id":"3d22a65a8f28b10a","type":"text","text":"**MAPPE DI KARNAUGH**","x":193,"y":-61,"width":250,"height":60,"color":"1"},
 		{"id":"c16722b963f39349","type":"text","text":"Ogni vertice rappresenta una configurazione di input","x":804,"y":-176,"width":255,"height":113},
 		{"id":"3f2d4bda575817e2","type":"text","text":"Ad ogni lato corrisponde una variabile, quella che cambia percorrendolo","x":795,"y":5,"width":274,"height":104},
 		{"id":"0bec5474c1cfb8d3","type":"text","text":"Passiamo dalla rappresentazione grafica su n dimensioni a una rappresentazione piana su 𝟐 dimensioni","x":975,"y":218,"width":391,"height":129},
@@ -18,7 +19,6 @@
 		{"id":"b5a8977ca0f65182","type":"text","text":"Dati due vertici <span style=\"font-weight:bold; color:#ff0000\">mintermini</span>, il lato che li connette rappresenta un’opportunità di semplificazione da cui calcolare un implicante","x":1144,"y":27,"width":365,"height":158},
 		{"id":"5c4a8d64209a2fd3","type":"text","text":"Rappresentazione 2D","x":634,"y":216,"width":250,"height":60,"color":"2"},
 		{"id":"3d4c107828d407d8","type":"text","text":"Distanza di Hamming","x":478,"y":-119,"width":250,"height":60},
-		{"id":"43aa385a6dfd2c90","type":"text","text":"Metodo per semplificare le espressioni booleane che si basa sull'identificazione degli implicanti","x":169,"y":109,"width":298,"height":152},
 		{"id":"7851a12f8825d4d4","type":"text","text":"In una funzione con *n* variabili, l'input è rappresentato da una stringa di *n* bit","x":159,"y":-466,"width":319,"height":125},
 		{"id":"cca26057638312ae","type":"text","text":"**Rappresentazione Grafica**","x":208,"y":-271,"width":220,"height":95,"color":"2"}
 	],
